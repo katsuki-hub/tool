@@ -8,7 +8,7 @@
   <title>WEBツールボックス</title>
   <meta name="description" content="仕事ツール等の便利なWEBツールサイトです">
   <meta name="keywords" content="WEBツール,プログラミング,便利ボックス">
-  <link href="/css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="192x192" href="android-touch-icon.png">
@@ -35,11 +35,13 @@
 
 <body>
   <header>
-    <?php $headerTitle = "便利なWEBツールボックス" ?>
+    <?php $headerTitle = "WEBツールボックス" ?>
     <?php require_once "common/header.php"; ?>
   </header>
   <div class="main-wrapper">
-    <h2>今後追加予定</h2>
+    <section>
+      <h2>今後追加予定</h2>
+    </section>
   </div><!-- /main-wrapper -->
   <footer>
     <?php require_once "common/footer.php"; ?>
