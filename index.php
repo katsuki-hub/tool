@@ -41,6 +41,9 @@
   <div class="main-wrapper">
     <section>
       <h2>今後追加予定</h2>
+      <ul>
+          <li><a href="content/rate.php">債権係数</a></li>
+        </ul>
     </section>
   </div><!-- /main-wrapper -->
   <footer>
