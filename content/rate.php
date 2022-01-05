@@ -26,7 +26,41 @@
         $_POST = es($_POST); //HTMLエスケープ(xss対策)
         ?>
 
-        <b>調達希望額を入力してください</b>
+        <b>■調達希望額と手数料を入力してください</b>
+
+        <!--$_POSTの数字の入力チェック-->
+        <?php
+        if (isset($_POST["cash"]) && (isset($_POST["rate"]))) {
+          $isNum = is_numeric($_POST["cash"]); //数値かどうか確認
+          if ($isNum) {
+            $cash = $_POST["cash"];
+            $rate = $_POST["rate"];
+            $error = "";
+          } else {
+            $cash = "";
+            $rate = "";
+            $error = '<span class = "error">数値を入力してください！</span>';
+          }
+        } else { //POSTされた値がない場合
+          $isNum = false;
+          $cash = "";
+          $rate = "";
+          $error = "";
+        }
+        ?>
+
+        <!--入力フォーム-->
+        <form method="$_POST" action="<?= es($_SERVER['PHP_SELF']); ?>">
+          <ul class="nolist">
+            <li>
+              <label>調達金額：<input type="number" name="cash" value="<?= $cash; ?>">円</label><br>
+              <label>　手数料：<input type="number" name="rate" value="<?= $rate; ?>">％</label>
+            </li>
+            <li><input type="submit" value="計算する"></li>
+          </ul>
+        </form>
+
+
 
 
 
