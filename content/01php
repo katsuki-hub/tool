@@ -11,18 +11,19 @@
     <?php $headerTitle = "" ?>
     <?php require_once "../common/header.php"; ?>
   </header>
-  <!-- main-wrapper -->
-  <div class="main-wrapper">
-    <article>
-      <section>
-        <h2></h2>
+  <div class="wall">
+    <div class="main-wrapper">
+      <article>
+        <section>
+          <h2></h2>
 
 
 
 
-      </section>
-    </article>
-  </div><!-- /.main-wrapper -->
+        </section>
+      </article>
+    </div><!-- /main-wrapper -->
+  </div><!-- /wall -->
   <footer>
     <?php require_once "../common/footer.php"; ?>
   </footer>

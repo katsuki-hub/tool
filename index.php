@@ -38,14 +38,15 @@
     <?php $headerTitle = "WEBツールボックス" ?>
     <?php require_once "common/header.php"; ?>
   </header>
-  <div class="main-wrapper">
-    <section>
-      <h2>今後追加予定</h2>
-      <ul>
+  <div class="wall">
+    <div class="main-wrapper">
+      <section>
+        <ul>
           <li><a href="content/rate.php">債権係数</a></li>
         </ul>
-    </section>
-  </div><!-- /main-wrapper -->
+      </section>
+    </div><!-- /main-wrapper -->
+  </div><!-- /wall -->
   <footer>
     <?php require_once "common/footer.php"; ?>
   </footer>
