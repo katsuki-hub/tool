@@ -17,10 +17,11 @@ body {
   margin: auto;
   background: url(../images/haguruma.png);
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .wall {
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(240, 248, 255, 0.9);
 }
 
 header {
@@ -49,7 +50,7 @@ header {
 }
 
 .main-wrapper {
-  min-height: 800px;
+  min-height: 750px;
   padding-top: 60px;
   margin: 5px 20px;
 }
