@@ -15,7 +15,7 @@ html, body {
 body {
   max-width: 1200px;
   margin: auto;
-  background: url(../images/haguruma.png)no-repeat;
+  background: url(../images/haguruma.png);
   background-size: cover;
 }
 
@@ -49,7 +49,7 @@ header {
 }
 
 .main-wrapper {
-  min-height: 850px;
+  min-height: 800px;
   padding-top: 60px;
   margin: 5px 20px;
 }
