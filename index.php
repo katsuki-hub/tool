@@ -41,9 +41,8 @@
   <div class="wall">
     <div class="main-wrapper">
       <section>
-        <ul>
-          <li><a href="content/rate.php">債権係数</a></li>
-        </ul>
+      <a href="content/rate.php"><img src="images/saiken.png" alt="債権係数"></a>
+        
       </section>
     </div><!-- /main-wrapper -->
   </div><!-- /wall -->

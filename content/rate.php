@@ -16,7 +16,7 @@
     <div class="main-wrapper">
       <article>
         <section>
-          <h2>債権に対して調達希望額から計算</h2>
+          <h2>調達希望額から計算</h2>
 
           <?php require_once "../common/es.php";
           if (!checkEn($_POST)) { //文字エンコードの検証
@@ -65,8 +65,8 @@
 
 
 
-
-
+          <h2>債権額から計算</h2>
+          <b>■債権額と手数料を入力してください</b>
         </section>
       </article>
     </div><!-- /main-wrapper -->
