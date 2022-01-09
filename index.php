@@ -43,6 +43,7 @@
     <div class="main-wrapper">
       <section>
         <a href="content/rate.php"><img src="images/saiken.png" alt="債権係数"></a>
+        <a href="content/dollarRate.php">円ドル変換ツール</a>
 
       </section>
     </div><!-- /main-wrapper -->
