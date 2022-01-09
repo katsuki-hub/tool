@@ -1,10 +1,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta http-equiv="x-ua-compatible" content="IE=edge">
+<meta name=”robots” content=”noindex”>
 <title><?= $title ?></title>
 <meta name="description" content="仕事ツール等の便利なWEBツールサイトです">
 <meta name="keywords" content="WEBツール,プログラミング,便利ボックス">
-<link href="../css/style.css" rel="stylesheet" type="text/css">
+<link href="../css/style.css?v=20220109" rel="stylesheet" type="text/css">
 <link rel="icon" type="image/x-icon" href="../favicon.ico">
 <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="../android-touch-icon.png">
