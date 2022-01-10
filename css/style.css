@@ -90,8 +90,17 @@ input[type="submit"]:valid {
 }
 
 img {
+  width: 100%;
+}
+
+.column {
+  display: flex;
+}
+
+.clm3 {
+  flex-wrap: wrap;
+  width: 30%;
   margin: 10px;
-  width: 70%;
 }
 
 footer {
