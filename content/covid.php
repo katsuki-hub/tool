@@ -8,14 +8,14 @@
 
 <body>
   <header>
-    <?php $headerTitle = "コロナウイルス県ごとの感染数" ?>
+    <?php $headerTitle = "CIVID 県別累積感染数" ?>
     <?php require_once "../common/header.php"; ?>
   </header>
   <div class="wall">
     <div class="main-wrapper">
       <article>
         <section>
-          <h2>コロナウイルス県ごとのデータ</h2>
+          <h2>COVID 累積データ</h2>
           <?php
           $url = "https://covid19-japan-web-api.now.sh/api/v1/prefectures";
           $json = mb_convert_encoding(file_get_contents($url), 'UTF8', 'ASCII,JIS,UTF-8,EUC-JP,SJIS-WIN');
