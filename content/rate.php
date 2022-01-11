@@ -31,42 +31,136 @@
 
           <!--$_POSTの数字の入力チェック-->
           <?php
-          if (isset($_POST["cash"]) && (isset($_POST["rate"]))) {
+          if (isset($_POST["cash"])) {
             $isNum = is_numeric($_POST["cash"]); //数値かどうか確認
             if ($isNum) {
               $cash = $_POST["cash"];
-              $rate = $_POST["rate"];
               $error = "";
             } else {
               $cash = "";
-              $rate = "";
               $error = '<span class = "error">数値を入力してください！</span>';
             }
           } else { //POSTされた値がない場合
             $isNum = false;
             $cash = "";
-            $rate = "";
             $error = "";
+          }
+
+          if (isset($_POST["rate"])) {
+            $isNum2 = is_numeric($_POST["rate"]); //数値かどうか確認
+            if ($isNum2) {
+              $rate = $_POST["rate"];
+              $error2 = "";
+            } else {
+              $rate = "";
+              $error2 = '<span class = "error">数値を入力してください！</span>';
+            }
+          } else { //POSTされた値がない場合
+            $isNum2 = false;
+            $rate = "";
+            $error2 = "";
           }
           ?>
 
           <!--入力フォーム-->
-          <form method="$_POST" action="<?= es($_SERVER['PHP_SELF']); ?>">
+          <form method="POST" action="<?php echo es($_SERVER['PHP_SELF']); ?>">
             <ul class="nolist">
               <li>
-                <label>調達金額：<input type="number" name="cash" value="<?= $cash; ?>">円</label><br>
-                <label>　手数料：<input type="number" name="rate" value="<?= $rate; ?>">％</label>
+                <label>
+                  希望額：<input type="number" name="cash" value="<?php echo $cash; ?>">
+                </label>円
+                <?php echo "<br>{$error}<br>" ?>
+                <label>
+                  手数料：<input type="text" name="rate" value="<?php echo $rate; ?>">
+                </label>％
+                <?php echo "<br>{$error2}<br>" ?>
               </li>
               <li><input type="submit" value="計算する"></li>
             </ul>
           </form>
 
+          <?php
+          if ($isNum && $isNum2) { //数値だった場合計算結果表示
+            echo "<HR>";
+            $cash_fmt = number_format($cash);
+            $interest = 100 / ($rate + 100);
+            $buyBonds = $cash / $interest;
+            $buyBonds_fmt = number_format($buyBonds);
+            $bondsRate = 1 - $interest;
+            $bondsRate100 = floor($bondsRate * 100 * 100) / 100;
+            echo '<div class = "frame">', '<span class="line">', "調達希望額が{$cash_fmt}円の場合", '</span><br>', "買取債権額は<b>{$buyBonds_fmt}円</b>です。<br>債権から{$bondsRate100}％引きになります。", '</div>';
+          }
+          ?>
 
-
-
+          <div class="br50"></div>
 
           <h2>債権額から計算</h2>
           <b>■債権額と手数料を入力してください</b>
+
+          <!--$_POSTの数字の入力チェック-->
+          <?php
+          if (isset($_POST["cash3"])) {
+            $isNum3 = is_numeric($_POST["cash3"]); //数値かどうか確認
+            if ($isNum3) {
+              $cash3 = $_POST["cash3"];
+              $error3 = "";
+            } else {
+              $cash3 = "";
+              $error3 = '<span class = "error">数値を入力してください！</span>';
+            }
+          } else { //POSTされた値がない場合
+            $isNum3 = false;
+            $cash3 = "";
+            $error3 = "";
+          }
+
+          if (isset($_POST["rate4"])) {
+            $isNum4 = is_numeric($_POST["rate4"]); //数値かどうか確認
+            if ($isNum4) {
+              $rate4 = $_POST["rate4"];
+              $error4 = "";
+            } else {
+              $rate4 = "";
+              $error4 = '<span class = "error">数値を入力してください！</span>';
+            }
+          } else { //POSTされた値がない場合
+            $isNum4 = false;
+            $rate4 = "";
+            $error4 = "";
+          }
+          ?>
+
+          <!--入力フォーム-->
+          <form method="POST" action="<?php echo es($_SERVER['PHP_SELF']); ?>">
+            <ul class="nolist">
+              <li>
+                <label>
+                  債権額：<input type="number" name="cash3" value="<?php echo $cash3; ?>">
+                </label>円
+                <?php echo "<br>{$error3}<br>" ?>
+                <label>
+                  手数料：<input type="text" name="rate4" value="<?php echo $rate4; ?>">
+                </label>％
+                <?php echo "<br>{$error4}<br>" ?>
+              </li>
+              <li><input type="submit" value="計算する"></li>
+            </ul>
+          </form>
+
+          <?php
+          if ($isNum3 && $isNum4) { //数値だった場合計算結果表示
+            echo "<HR>";
+            $cash_fmt3 = number_format($cash3);
+            $interest4 = 100 / ($rate4 + 100);
+            $buyBonds4 = $cash3 * $interest4;
+            $buyBonds_fmt4 = number_format($buyBonds4);
+            $bondsRate4 = 1 - $interest4;
+            $bondsRate4100 = floor($bondsRate4 * 100 * 100) / 100;
+            echo '<div class = "frame">', '<span class="line">', "売掛債権額が{$cash_fmt3}円の場合", '</span><br>', "資金調達額は<b>{$buyBonds_fmt4}円</b>です。<br>債権から{$bondsRate4100}％引きになります。", '</div>';
+          }
+          ?>
+
+          <div class="br50"></div>
         </section>
       </article>
     </div><!-- /main-wrapper -->
