@@ -9,7 +9,7 @@
   <title>WEBツールボックス</title>
   <meta name="description" content="仕事ツール等の便利なWEBツールサイトです">
   <meta name="keywords" content="WEBツール,プログラミング,便利ボックス">
-  <link href="css/style.css?v=20220109" rel="stylesheet" type="text/css">
+  <link href="css/style.css?v=20220111" rel="stylesheet" type="text/css">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="192x192" href="android-touch-icon.png">
@@ -43,9 +43,9 @@
     <div class="main-wrapper">
       <section>
         <div class="column">
-            <a href="content/rate.php" class="clm3"><img src="images/saiken.png" alt="債権係数"></a>
-            <a href="content/dollarRate.php" class="clm3"><img src="images/yendol.png" alt="円ドル変換"></a>
-            <a href="content/covid.php" class="clm3"><img src="images/yendol.png" alt="円ドル変換"></a>
+          <a href="content/rate.php" class="clm3"><img src="images/saiken.png" alt="債権係数"></a>
+          <a href="content/dollarRate.php" class="clm3"><img src="images/yendol.png" alt="円ドル変換"></a>
+          <a href="content/covid.php" class="clm3"><img src="images/covid.png" alt="covid累積"></a>
         </div><!-- /column -->
       </section>
     </div><!-- /main-wrapper -->
