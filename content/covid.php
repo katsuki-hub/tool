@@ -21,16 +21,49 @@
           $json = mb_convert_encoding(file_get_contents($url), 'UTF8', 'ASCII,JIS,UTF-8,EUC-JP,SJIS-WIN');
           $arr = json_decode($json, true);
 
+          $updated = $arr[0]['last_updated']['cases_date'];
+          $time_value = $updated;
+          echo "データ取得日：", date('Y年m月d日', strtotime($time_value));
+          ?>
+          
+          <h3>全国累積データ</h3>
+          <div class="frame">
+            <?php
+            $sumCases = 0;
+            $sumDeaths = 0;
+            $sumPcr = 0;
+            foreach ($arr as $value) {
+              $sumCases += $value['cases'];
+              $sumDeaths += $value['deaths'];
+              $sumPcr += $value['pcr'];
+            }
+            //数字フォーマット
+            $sumCases_fmt = number_format($sumCases);
+            $sumDeaths_fmt = number_format($sumDeaths);
+            $sumPcr_fmt = number_format($sumPcr);
+            //出力フォーム
+            $allCases = "発生件数　　" . $sumCases_fmt . "人\n" . "<br>" . PHP_EOL;
+            $allDeaths = "死者数　　　" . $sumDeaths_fmt . "人\n" . "<br>" . PHP_EOL;
+            $allPcr = "PCR件数　　" . $sumPcr_fmt . "人\n" . "<br>" . PHP_EOL;
+            echo "$allCases";
+            echo "$allDeaths";
+            echo "$allPcr";
+            ?>
+          </div>
+
+          <h3>県別累積データ</h3>
+          <?php
           foreach ($arr as $data) {
             $ja = "都道府県名　　" . $data['name_ja'] . "\n" . "<br>" . PHP_EOL;
-            $cases = "発生件数　　" . $data['cases'] . "人\n" . "<br>" . PHP_EOL;
-            $deaths = "死者数　　　" . $data['deaths'] . "人\n" . "<br>" . PHP_EOL;
-            $pcr = "pcr件数　　" . $data['pcr'] . "人\n" . "<br>" . "<HR>" . PHP_EOL;
+            $cases = "発生件数　　" . number_format($data['cases']) . "人\n" . "<br>" . PHP_EOL;
+            $deaths = "死者数　　　" . number_format($data['deaths']) . "人\n" . "<br>" . PHP_EOL;
+            $pcr = "PCR件数　　" . number_format($data['pcr']) . "人\n" . "<br>" . "<HR>" . PHP_EOL;
             $virusData = array(
               $ja, $cases, $deaths, $pcr,
             );
             echo implode('▲', $virusData);
           }
+
           ?>
         </section>
       </article>

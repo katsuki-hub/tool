@@ -15,8 +15,6 @@
     <div class="main-wrapper">
       <article>
         <section>
-
-
           <?php
           $url = "http://fx.mybluemix.net/"; //公開されているjsonデータのURL
           $json = mb_convert_encoding(file_get_contents($url), 'UTF8', 'ASCII,JIS,UTF-8,EUC-JP,SJIS-WIN');
@@ -25,8 +23,11 @@
           if ($arr === NULL) {
             echo "データがありません";
           } else {
-
-            echo "$arr{array[20]}";
+            echo "<ol>", "\n";
+            foreach ($arr as $value) {
+              echo "<li>", $value, "</li>\n";
+            }
+            echo "<ol>";
           }
           ?>
 
