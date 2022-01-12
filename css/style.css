@@ -77,7 +77,6 @@ h2:after {
 }
 
 h3 {
-  padding: 1rem;
   letter-spacing: .12em;
   color: #fff;
   text-shadow: #000 2px 0, #000 -2px 0, #000 0 -2px, #000 0 2px, #000 2px 2px, #000 -2px 2px, #000 2px -2px, #000 -2px -2px, #000 1px 2px, #000 -1px 2px, #000 1px -2px, #000 -1px -2px, #000 2px 1px, #000 -2px 1px, #000 2px -1px, #000 -2px -1px, 4px 4px 0 #000, 0 4px 0 #000;
@@ -108,7 +107,7 @@ input[type="submit"]:valid {
   font-size: 16px;
 }
 
-img {
+.column img {
   width: 100%;
 }
 

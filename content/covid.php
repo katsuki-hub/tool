@@ -25,7 +25,7 @@
           $time_value = $updated;
           echo "データ取得日：", date('Y年m月d日', strtotime($time_value));
           ?>
-          
+
           <h3>全国累積データ</h3>
           <div class="frame">
             <?php
@@ -63,7 +63,6 @@
             );
             echo implode('▲', $virusData);
           }
-
           ?>
         </section>
       </article>
