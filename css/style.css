@@ -56,6 +56,50 @@ header {
   margin: 5px 20px;
 }
 
+.chara {
+  background: url("../images/boat.png")no-repeat;
+  background-size: 15%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+  text-align: center;
+  top: 60px;
+  animation: stepline 10s steps(250) infinite;
+}
+
+.chara2 {
+  background: url("../images/bike.png")no-repeat;
+  background-size: 15%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+  text-align: right;
+  top: 60px;
+  animation: stepline2 10s steps(250) infinite;
+}
+
+@keyframes stepline {
+	0% {
+		background-position: -90% 0;
+	}
+
+	100% {
+		background-position: 120% 0;
+	}
+}
+
+@keyframes stepline2 {
+	0% {
+		background-position: -20% 0;
+	}
+
+	100% {
+		background-position: 190% 0;
+	}
+}
+
 h2 {
   position: relative;
   color: #000000;
@@ -117,6 +161,7 @@ input[type="submit"]:valid {
 }
 
 .clm3 {
+  z-index: 100;
   width: 45%;
   margin: 10px auto;
 }
@@ -151,9 +196,26 @@ footer {
 }
 
 /*=====================
+540px以上
+=====================*/
+@media screen and (min-width:540px) {
+  .br50 {
+    height: 100px;
+  }
+}
+/*=====================
+780px以上
+=====================*/
+@media screen and (min-width:1000px) {
+  .br50 {
+    height: 150px;
+  }
+}
+
+/*=====================
 タブレット＆スマホ
 =====================*/
-@media screen and (max-width:800px) {
+@media screen and (max-width:780px) {
   .header-contents h1 {
     font-size: 1.3rem;
   }

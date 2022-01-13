@@ -41,6 +41,9 @@
   </header>
   <div class="wall">
     <div class="main-wrapper">
+      <div class="chara"></div>
+      <div class="chara2"></div>
+      <div class="br50"></div>
       <section>
         <div class="column">
           <a href="content/rate.php" class="clm3"><img src="images/saiken.png" alt="債権係数"></a>
