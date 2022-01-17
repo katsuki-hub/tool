@@ -49,6 +49,7 @@
           <a href="content/rate.php" class="clm3"><img src="images/saiken.png" alt="債権係数"></a>
           <a href="content/dollarRate.php" class="clm3"><img src="images/yendol.png" alt="円ドル変換"></a>
           <a href="content/covid.php" class="clm3"><img src="images/covid.png" alt="covid累積"></a>
+          <a href="content/worldCovid.php" class="clm3"><img src="images/covid.png" alt="世界累積データ"></a>
         </div><!-- /column -->
       </section>
     </div><!-- /main-wrapper -->

@@ -1,55 +1,1556 @@
-array(2) {
-  [
-    "status"
-  ]=> bool(true) [
-    "result"
-  ]=> array(2) {
-    [
-      "datetime"
-    ]=> string(21) "2022-01-12 04:43:34+0" [
-      "rate"
-    ]=> array(20) {
-      [
-        "USDJPY"
-      ]=> float(115.384) [
-        "EURJPY"
-      ]=> float(131.226) [
-        "EURUSD"
-      ]=> float(1.13734) [
-        "AUDJPY"
-      ]=> float(83.292) [
-        "GBPJPY"
-      ]=> float(157.37) [
-        "NZDJPY"
-      ]=> float(78.347) [
-        "CADJPY"
-      ]=> float(91.914) [
-        "CHFJPY"
-      ]=> float(124.95) [
-        "HKDJPY"
-      ]=> float(14.79) [
-        "GBPUSD"
-      ]=> float(1.36395) [
-        "USDCHF"
-      ]=> float(0.92331) [
-        "ZARJPY"
-      ]=> float(7.438) [
-        "AUDUSD"
-      ]=> float(0.72184) [
-        "NZDUSD"
-      ]=> float(0.67895) [
-        "EURAUD"
-      ]=> float(1.5754) [
-        "TRYJPY"
-      ]=> float(8.371) [
-        "CNHJPY"
-      ]=> float(18.106) [
-        "NOKJPY"
-      ]=> float(13.151) [
-        "SEKJPY"
-      ]=> float(12.773) [
-        "MXNJPY"
-      ]=> float(5.658)
-    }
-  }
-}
+Array ( [errorInfo
+] => Array ( [errorFlag
+] => 0 [errorCode
+] => [errorMessage
+] => ) [itemList
+] => Array ( [
+  0
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => 中国 [infectedNum
+] => 104,
+580 [deceasedNum
+] => 4,
+636 ) [
+  1
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => 香港 [infectedNum
+] => 13,
+016 [deceasedNum
+] => 213 ) [
+  2
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => マカオ [infectedNum
+] => 79 [deceasedNum
+] => 0 ) [
+  3
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => 日本 [infectedNum
+] => 1,
+809,
+010 [deceasedNum
+] => 18,
+414 ) [
+  4
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => 韓国 [infectedNum
+] => 683,
+566 [deceasedNum
+] => 6,
+259 ) [
+  5
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => 台湾 [infectedNum
+] => 17,
+624 [deceasedNum
+] => 851 ) [
+  6
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => シンガポール [infectedNum
+] => 289,
+085 [deceasedNum
+] => 839 ) [
+  7
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ネパール [infectedNum
+] => 841,
+297 [deceasedNum
+] => 11,
+610 ) [
+  8
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => タイ [infectedNum
+] => 2,
+300,
+457 [deceasedNum
+] => 21,
+883 ) [
+  9
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ベトナム [infectedNum
+] => 1,
+975,
+444 [deceasedNum
+] => 35,
+170 ) [
+  10
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => マレーシア [infectedNum
+] => 2,
+798,
+917 [deceasedNum
+] => 31,
+750 ) [
+  11
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => 豪州 [infectedNum
+] => 1,
+526,
+961 [deceasedNum
+] => 2,
+572 ) [
+  12
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => 米国 [infectedNum
+] => 64,
+061,
+989 [deceasedNum
+] => 846,
+463 ) [
+  13
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => カナダ [infectedNum
+] => 2,
+695,
+122 [deceasedNum
+] => 31,
+259 ) [
+  14
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => フランス [infectedNum
+] => 13,
+351,
+053 [deceasedNum
+] => 127,
+520 ) [
+  15
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ドイツ [infectedNum
+] => 7,
+866,
+784 [deceasedNum
+] => 115,
+343 ) [
+  16
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => カンボジア [infectedNum
+] => 120,
+718 [deceasedNum
+] => 3,
+015 ) [
+  17
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => スリランカ [infectedNum
+] => 594,
+319 [deceasedNum
+] => 15,
+174 ) [
+  18
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => アラブ首長国連邦 [infectedNum
+] => 795,
+997 [deceasedNum
+] => 2,
+182 ) [
+  19
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => フィンランド [infectedNum
+] => 361,
+553 [deceasedNum
+] => 1,
+700 ) [
+  20
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => フィリピン [infectedNum
+] => 3,
+092,
+409 [deceasedNum
+] => 52,
+736 ) [
+  21
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => インド [infectedNum
+] => 36,
+317,
+927 [deceasedNum
+] => 485,
+035 ) [
+  22
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => イタリア [infectedNum
+] => 8,
+155,
+645 [deceasedNum
+] => 140,
+188 ) [
+  23
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => 英国 [infectedNum
+] => 15,
+064,
+685 [deceasedNum
+] => 151,
+833 ) [
+  24
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ロシア [infectedNum
+] => 10,
+541,
+870 [deceasedNum
+] => 312,
+733 ) [
+  25
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => スウェーデン [infectedNum
+] => 1,
+534,
+797 [deceasedNum
+] => 15,
+482 ) [
+  26
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => スペイン [infectedNum
+] => 7,
+930,
+528 [deceasedNum
+] => 90,
+620 ) [
+  27
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ベルギー [infectedNum
+] => 2,
+347,
+164 [deceasedNum
+] => 28,
+566 ) [
+  28
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => エジプト [infectedNum
+] => 396,
+699 [deceasedNum
+] => 22,
+063 ) [
+  29
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => イラン [infectedNum
+] => 6,
+214,
+781 [deceasedNum
+] => 132,
+002 ) [
+  30
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => イスラエル [infectedNum
+] => 1,
+695,
+505 [deceasedNum
+] => 8,
+293 ) [
+  31
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => レバノン [infectedNum
+] => 801,
+801 [deceasedNum
+] => 9,
+338 ) [
+  32
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => クウェート [infectedNum
+] => 451,
+430 [deceasedNum
+] => 2,
+474 ) [
+  33
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => バーレーン [infectedNum
+] => 300,
+631 [deceasedNum
+] => 1,
+397 ) [
+  34
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => オマーン [infectedNum
+] => 310,
+338 [deceasedNum
+] => 4,
+119 ) [
+  35
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => アフガニスタン [infectedNum
+] => 158,
+602 [deceasedNum
+] => 7,
+376 ) [
+  36
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => イラク [infectedNum
+] => 2,
+104,
+940 [deceasedNum
+] => 24,
+229 ) [
+  37
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => アルジェリア [infectedNum
+] => 224,
+383 [deceasedNum
+] => 6,
+383 ) [
+  38
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => オーストリア [infectedNum
+] => 1,
+394,
+599 [deceasedNum
+] => 13,
+898 ) [
+  39
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => スイス [infectedNum
+] => 1,
+634,
+258 [deceasedNum
+] => 12,
+447 ) [
+  40
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => クロアチア [infectedNum
+] => 794,
+190 [deceasedNum
+] => 13,
+006 ) [
+  41
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ブラジル [infectedNum
+] => 22,
+822,
+177 [deceasedNum
+] => 620,
+830 ) [
+  42
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ジョージア [infectedNum
+] => 979,
+235 [deceasedNum
+] => 14,
+359 ) [
+  43
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => パキスタン [infectedNum
+] => 1,
+315,
+834 [deceasedNum
+] => 28,
+999 ) [
+  44
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => 北マケドニア [infectedNum
+] => 239,
+920 [deceasedNum
+] => 8,
+070 ) [
+  45
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ギリシア [infectedNum
+] => 1,
+612,
+869 [deceasedNum
+] => 21,
+732 ) [
+  46
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ノルウェー [infectedNum
+] => 483,
+952 [deceasedNum
+] => 1,
+381 ) [
+  47
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ルーマニア [infectedNum
+] => 1,
+875,
+887 [deceasedNum
+] => 59,
+150 ) [
+  48
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => デンマーク [infectedNum
+] => 1,
+072,
+431 [deceasedNum
+] => 3,
+470 ) [
+  49
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => エストニア [infectedNum
+] => 260,
+396 [deceasedNum
+] => 1,
+967 ) [
+  50
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => オランダ [infectedNum
+] => 3,
+539,
+335 [deceasedNum
+] => 21,
+610 ) [
+  51
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => サンマリノ [infectedNum
+] => 10,
+189 [deceasedNum
+] => 103 ) [
+  52
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => リトアニア [infectedNum
+] => 555,
+971 [deceasedNum
+] => 7,
+603 ) [
+  53
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ナイジェリア [infectedNum
+] => 250,
+009 [deceasedNum
+] => 3,
+092 ) [
+  54
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => アイスランド [infectedNum
+] => 43,
+768 [deceasedNum
+] => 43 ) [
+  55
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => アゼルバイジャン [infectedNum
+] => 623,
+555 [deceasedNum
+] => 8,
+490 ) [
+  56
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ベラルーシ [infectedNum
+] => 711,
+723 [deceasedNum
+] => 5,
+774 ) [
+  57
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ニュージーランド [infectedNum
+] => 14,
+949 [deceasedNum
+] => 52 ) [
+  58
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => メキシコ [infectedNum
+] => 4,
+214,
+253 [deceasedNum
+] => 300,
+764 ) [
+  59
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => カタール [infectedNum
+] => 287,
+091 [deceasedNum
+] => 623 ) [
+  60
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ルクセンブルク [infectedNum
+] => 121,
+237 [deceasedNum
+] => 931 ) [
+  61
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => モナコ [infectedNum
+] => 6,
+362 [deceasedNum
+] => 44 ) [
+  62
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => エクアドル [infectedNum
+] => 559,
+950 [deceasedNum
+] => 33,
+699 ) [
+  63
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => アイルランド [infectedNum
+] => 1,
+061,
+116 [deceasedNum
+] => 6,
+035 ) [
+  64
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => チェコ [infectedNum
+] => 2,
+562,
+235 [deceasedNum
+] => 36,
+765 ) [
+  65
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => アルメニア [infectedNum
+] => 346,
+811 [deceasedNum
+] => 8,
+014 ) [
+  66
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ドミニカ共和国 [infectedNum
+] => 482,
+457 [deceasedNum
+] => 4,
+259 ) [
+  67
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => インドネシア [infectedNum
+] => 4,
+268,
+890 [deceasedNum
+] => 144,
+155 ) [
+  68
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => アンドラ [infectedNum
+] => 28,
+899 [deceasedNum
+] => 141 ) [
+  69
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ポルトガル [infectedNum
+] => 1,
+774,
+477 [deceasedNum
+] => 19,
+203 ) [
+  70
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ラトビア [infectedNum
+] => 295,
+961 [deceasedNum
+] => 4,
+700 ) [
+  71
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => セネガル [infectedNum
+] => 81,
+366 [deceasedNum
+] => 1,
+903 ) [
+  72
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => サウジアラビア [infectedNum
+] => 599,
+044 [deceasedNum
+] => 8,
+901 ) [
+  73
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ヨルダン [infectedNum
+] => 1,
+091,
+691 [deceasedNum
+] => 12,
+945 ) [
+  74
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => アルゼンチン [infectedNum
+] => 6,
+793,
+119 [deceasedNum
+] => 117,
+808 ) [
+  75
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => チリ [infectedNum
+] => 1,
+849,
+465 [deceasedNum
+] => 39,
+331 ) [
+  76
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ウクライナ [infectedNum
+] => 3,
+908,
+469 [deceasedNum
+] => 104,
+367 ) [
+  77
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => モロッコ [infectedNum
+] => 1,
+025,
+898 [deceasedNum
+] => 14,
+945 ) [
+  78
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => チュニジア [infectedNum
+] => 762,
+717 [deceasedNum
+] => 25,
+744 ) [
+  79
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ハンガリー [infectedNum
+] => 1,
+318,
+093 [deceasedNum
+] => 40,
+164 ) [
+  80
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => リヒテンシュタイン [infectedNum
+] => 7,
+013 [deceasedNum
+] => 72 ) [
+  81
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ポーランド [infectedNum
+] => 4,
+265,
+433 [deceasedNum
+] => 101,
+419 ) [
+  82
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => スロベニア [infectedNum
+] => 512,
+793 [deceasedNum
+] => 5,
+685 ) [
+  83
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => パレスチナ [infectedNum
+] => 474,
+234 [deceasedNum
+] => 5,
+005 ) [
+  84
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ボスニア・ヘルツェゴビナ [infectedNum
+] => 310,
+023 [deceasedNum
+] => 13,
+722 ) [
+  85
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => 南アフリカ [infectedNum
+] => 3,
+546,
+808 [deceasedNum
+] => 92,
+989 ) [
+  86
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ブータン [infectedNum
+] => 2,
+873 [deceasedNum
+] => 3 ) [
+  87
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => カメルーン [infectedNum
+] => 109,
+666 [deceasedNum
+] => 1,
+853 ) [
+  88
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => トーゴ [infectedNum
+] => 35,
+425 [deceasedNum
+] => 261 ) [
+  89
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => セルビア [infectedNum
+] => 1,
+399,
+867 [deceasedNum
+] => 13,
+003 ) [
+  90
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => スロバキア [infectedNum
+] => 1,
+409,
+365 [deceasedNum
+] => 17,
+128 ) [
+  91
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => バチカン [infectedNum
+] => 27 [deceasedNum
+] => 0 ) [
+  92
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => コロンビア [infectedNum
+] => 5,
+440,
+981 [deceasedNum
+] => 130,
+625 ) [
+  93
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ペルー [infectedNum
+] => 2,
+412,
+577 [deceasedNum
+] => 203,
+157 ) [
+  94
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => コスタリカ [infectedNum
+] => 604,
+658 [deceasedNum
+] => 7,
+401 ) [
+  95
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => マルタ [infectedNum
+] => 62,
+390 [deceasedNum
+] => 496 ) [
+  96
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => パラグアイ [infectedNum
+] => 475,
+686 [deceasedNum
+] => 16,
+670 ) [
+  97
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => バングラデシュ [infectedNum
+] => 1,
+604,
+664 [deceasedNum
+] => 28,
+123 ) [
+  98
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => モルドバ [infectedNum
+] => 385,
+047 [deceasedNum
+] => 10,
+416 ) [
+  99
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ブルガリア [infectedNum
+] => 806,
+977 [deceasedNum
+] => 31,
+922 ) [
+  100
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => モルディブ [infectedNum
+] => 100,
+451 [deceasedNum
+] => 264 ) [
+  101
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ブルネイ [infectedNum
+] => 15,
+750 [deceasedNum
+] => 98 ) [
+  102
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => キプロス [infectedNum
+] => 218,
+374 [deceasedNum
+] => 672 ) [
+  103
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => アルバニア [infectedNum
+] => 226,
+598 [deceasedNum
+] => 3,
+255 ) [
+  104
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ブルキナファソ [infectedNum
+] => 19,
+972 [deceasedNum
+] => 339 ) [
+  105
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => モンゴル [infectedNum
+] => 400,
+452 [deceasedNum
+] => 2,
+079 ) [
+  106
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => パナマ [infectedNum
+] => 540,
+072 [deceasedNum
+] => 7,
+486 ) [
+  107
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ボリビア [infectedNum
+] => 711,
+299 [deceasedNum
+] => 20,
+103 ) [
+  108
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ホンジュラス [infectedNum
+] => 382,
+440 [deceasedNum
+] => 10,
+449 ) [
+  109
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => コンゴ民主共和国 [infectedNum
+] => 81,
+719 [deceasedNum
+] => 1,
+225 ) [
+  110
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ジャマイカ [infectedNum
+] => 107,
+721 [deceasedNum
+] => 2,
+514 ) [
+  111
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => トルコ [infectedNum
+] => 10,
+273,
+170 [deceasedNum
+] => 84,
+278 ) [
+  112
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => コートジボワール [infectedNum
+] => 78,
+495 [deceasedNum
+] => 747 ) [
+  113
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ガイアナ [infectedNum
+] => 48,
+191 [deceasedNum
+] => 1,
+075 ) [
+  114
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => キューバ [infectedNum
+] => 988,
+789 [deceasedNum
+] => 8,
+331 ) [
+  115
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => トリニダード・トバゴ [infectedNum
+] => 98,
+927 [deceasedNum
+] => 3,
+134 ) [
+  116
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => スーダン [infectedNum
+] => 49,
+916 [deceasedNum
+] => 3,
+358 ) [
+  117
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ギニア [infectedNum
+] => 35,
+202 [deceasedNum
+] => 406 ) [
+  118
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => エチオピア [infectedNum
+] => 453,
+128 [deceasedNum
+] => 7,
+109 ) [
+  119
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ケニア [infectedNum
+] => 315,
+665 [deceasedNum
+] => 5,
+472 ) [
+  120
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => グアテマラ [infectedNum
+] => 646,
+319 [deceasedNum
+] => 16,
+145 ) [
+  121
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ベネズエラ [infectedNum
+] => 449,
+730 [deceasedNum
+] => 5,
+370 ) [
+  122
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ガボン [infectedNum
+] => 44,
+806 [deceasedNum
+] => 297 ) [
+  123
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ガーナ [infectedNum
+] => 152,
+729 [deceasedNum
+] => 1,
+336 ) [
+  124
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => アンティグア・バーブーダ [infectedNum
+] => 5,
+214 [deceasedNum
+] => 120 ) [
+  125
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => カザフスタン [infectedNum
+] => 1,
+108,
+567 [deceasedNum
+] => 18,
+291 ) [
+  126
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ウルグアイ [infectedNum
+] => 483,
+820 [deceasedNum
+] => 6,
+211 ) [
+  127
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ナミビア [infectedNum
+] => 153,
+611 [deceasedNum
+] => 3,
+783 ) [
+  128
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => セーシェル [infectedNum
+] => 31,
+098 [deceasedNum
+] => 136 ) [
+  129
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => セントルシア [infectedNum
+] => 16,
+505 [deceasedNum
+] => 311 ) [
+  130
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ルワンダ [infectedNum
+] => 123,
+886 [deceasedNum
+] => 1,
+395 ) [
+  131
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => エスワティニ [infectedNum
+] => 67,
+676 [deceasedNum
+] => 1,
+352 ) [
+  132
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => スリナム [infectedNum
+] => 61,
+708 [deceasedNum
+] => 1,
+203 ) [
+  133
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => モーリタニア [infectedNum
+] => 52,
+772 [deceasedNum
+] => 895 ) [
+  134
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => コソボ [infectedNum
+] => 164,
+120 [deceasedNum
+] => 2,
+994 ) [
+  135
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => コンゴ共和国 [infectedNum
+] => 22,
+418 [deceasedNum
+] => 370 ) [
+  136
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => セントビンセント及びクレナディーン諸島 [infectedNum
+] => 6,
+575 [deceasedNum
+] => 85 ) [
+  137
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => 中央アフリカ [infectedNum
+] => 12,
+650 [deceasedNum
+] => 106 ) [
+  138
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ウズベキスタン [infectedNum
+] => 202,
+473 [deceasedNum
+] => 1,
+508 ) [
+  139
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => 赤道ギニア [infectedNum
+] => 14,
+871 [deceasedNum
+] => 177 ) [
+  140
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => リベリア [infectedNum
+] => 7,
+121 [deceasedNum
+] => 287 ) [
+  141
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => タンザニア [infectedNum
+] => 30,
+564 [deceasedNum
+] => 740 ) [
+  142
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ソマリア [infectedNum
+] => 24,
+261 [deceasedNum
+] => 1,
+335 ) [
+  143
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ベナン [infectedNum
+] => 26,
+036 [deceasedNum
+] => 162 ) [
+  144
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => バハマ [infectedNum
+] => 29,
+908 [deceasedNum
+] => 719 ) [
+  145
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => モンテネグロ [infectedNum
+] => 198,
+857 [deceasedNum
+] => 2,
+460 ) [
+  146
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => バルバドス [infectedNum
+] => 33,
+888 [deceasedNum
+] => 269 ) [
+  147
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => キルギス [infectedNum
+] => 187,
+620 [deceasedNum
+] => 2,
+826 ) [
+  148
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ザンビア [infectedNum
+] => 291,
+582 [deceasedNum
+] => 3,
+834 ) [
+  149
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ジブチ [infectedNum
+] => 14,
+680 [deceasedNum
+] => 189 ) [
+  150
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ガンビア [infectedNum
+] => 11,
+122 [deceasedNum
+] => 344 ) [
+  151
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => モーリシャス [infectedNum
+] => 24,
+425 [deceasedNum
+] => 240 ) [
+  152
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => フィジー [infectedNum
+] => 58,
+491 [deceasedNum
+] => 721 ) [
+  153
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => エルサルバドル [infectedNum
+] => 123,
+025 [deceasedNum
+] => 3,
+829 ) [
+  154
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => チャド [infectedNum
+] => 6,
+558 [deceasedNum
+] => 185 ) [
+  155
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ニカラグア [infectedNum
+] => 17,
+563 [deceasedNum
+] => 218 ) [
+  156
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => マダガスカル [infectedNum
+] => 54,
+101 [deceasedNum
+] => 1,
+117 ) [
+  157
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ハイチ [infectedNum
+] => 27,
+082 [deceasedNum
+] => 780 ) [
+  158
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => アンゴラ [infectedNum
+] => 92,
+581 [deceasedNum
+] => 1,
+847 ) [
+  159
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ニジェール [infectedNum
+] => 8,
+306 [deceasedNum
+] => 286 ) [
+  160
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => パプアニューギニア [infectedNum
+] => 36,
+432 [deceasedNum
+] => 595 ) [
+  161
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ジンバブエ [infectedNum
+] => 225,
+084 [deceasedNum
+] => 5,
+222 ) [
+  162
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => カーボベルデ [infectedNum
+] => 52,
+729 [deceasedNum
+] => 370 ) [
+  163
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => エリトリア [infectedNum
+] => 8,
+755 [deceasedNum
+] => 85 ) [
+  164
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => 東ティモール [infectedNum
+] => 19,
+860 [deceasedNum
+] => 122 ) [
+  165
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ウガンダ [infectedNum
+] => 156,
+704 [deceasedNum
+] => 3,
+378 ) [
+  166
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => シリア [infectedNum
+] => 50,
+580 [deceasedNum
+] => 2,
+936 ) [
+  167
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => モザンビーク [infectedNum
+] => 216,
+559 [deceasedNum
+] => 2,
+109 ) [
+  168
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => グレナダ [infectedNum
+] => 8,
+966 [deceasedNum
+] => 201 ) [
+  169
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ベリーズ [infectedNum
+] => 39,
+890 [deceasedNum
+] => 607 ) [
+  170
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ミャンマー [infectedNum
+] => 532,
+725 [deceasedNum
+] => 19,
+298 ) [
+  171
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ドミニカ国 [infectedNum
+] => 7,
+667 [deceasedNum
+] => 47 ) [
+  172
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ラオス [infectedNum
+] => 122,
+241 [deceasedNum
+] => 471 ) [
+  173
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ギニアビサウ [infectedNum
+] => 6,
+898 [deceasedNum
+] => 150 ) [
+  174
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => マリ [infectedNum
+] => 27,
+653 [deceasedNum
+] => 678 ) [
+  175
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => セントクリストファー・ネービス [infectedNum
+] => 4,
+645 [deceasedNum
+] => 28 ) [
+  176
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => リビア [infectedNum
+] => 395,
+687 [deceasedNum
+] => 5,
+822 ) [
+  177
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => シエラレオネ [infectedNum
+] => 7,
+500 [deceasedNum
+] => 125 ) [
+  178
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ブルンジ [infectedNum
+] => 36,
+115 [deceasedNum
+] => 38 ) [
+  179
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ボツワナ [infectedNum
+] => 237,
+678 [deceasedNum
+] => 2,
+514 ) [
+  180
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => マラウイ [infectedNum
+] => 81,
+890 [deceasedNum
+] => 2,
+445 ) [
+  181
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => 南スーダン共和国 [infectedNum
+] => 16,
+407 [deceasedNum
+] => 136 ) [
+  182
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => サントメ・プリンシペ [infectedNum
+] => 5,
+404 [deceasedNum
+] => 65 ) [
+  183
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => イエメン共和国 [infectedNum
+] => 10,
+233 [deceasedNum
+] => 1,
+987 ) [
+  184
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => タジキスタン共和国 [infectedNum
+] => 17,
+493 [deceasedNum
+] => 125 ) [
+  185
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => コモロ連合 [infectedNum
+] => 7,
+715 [deceasedNum
+] => 159 ) [
+  186
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => レソト王国 [infectedNum
+] => 31,
+604 [deceasedNum
+] => 687 ) [
+  187
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ソロモン諸島 [infectedNum
+] => 25 [deceasedNum
+] => 0 ) [
+  188
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => マーシャル諸島共和国 [infectedNum
+] => 7 [deceasedNum
+] => 0 ) [
+  189
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => バヌアツ共和国 [infectedNum
+] => 7 [deceasedNum
+] => 1 ) [
+  190
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => サモア独立国 [infectedNum
+] => 3 [deceasedNum
+] => 0 ) [
+  191
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ミクロネシア連邦 [infectedNum
+] => 1 [deceasedNum
+] => 0 ) [
+  192
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => キリバス共和国 [infectedNum
+] => 2 [deceasedNum
+] => 0 ) [
+  193
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => パラオ共和国 [infectedNum
+] => 8 [deceasedNum
+] => 0 ) [
+  194
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => トンガ王国 [infectedNum
+] => 1 [deceasedNum
+] => 0 ) [
+  195
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => ダイヤモンド・プリンセス [infectedNum
+] => 712 [deceasedNum
+] => 13 ) [
+  196
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => その他 [infectedNum
+] => 9 [deceasedNum
+] => 2 ) [
+  197
+] => Array ( [date
+] => 2022/01/14 [dataName
+] => 計 [infectedNum
+] => 319,
+994,
+600 [deceasedNum
+] => 5,
+520,
+470 ) ) )
