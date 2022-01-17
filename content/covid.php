@@ -23,7 +23,7 @@
 
           $updated = $arr[0]['last_updated']['cases_date'];
           $time_value = $updated;
-          echo "データ取得日：", date('Y年m月d日', strtotime($time_value));
+          echo "データ取得日：", date('Y年m月d日', strtotime($time_value)), "<br>取得データの前日累計";
           ?>
 
           <h3>全国累積データ</h3>
@@ -52,6 +52,16 @@
           </div>
 
           <h3>県別累積データ</h3>
+          <p><small><span class="error">※感染者数順に参照</span></small></p>
+          <!-- 多次元配列のソート -->
+          <?php
+          foreach ($arr as $key => $value) {
+            $sort[$key] = $value['cases'];
+          }
+          array_multisort($sort, SORT_DESC, $arr);
+          ?>
+
+          <!-- データ出力 -->
           <?php
           foreach ($arr as $data) {
             $ja = "都道府県名　　" . $data['name_ja'] . "\n" . "<br>" . PHP_EOL;

@@ -23,7 +23,7 @@
 
           $updated = $arr[0]['date'];
           $time_value = $updated;
-          echo "データ取得日：", date('Y年m月d日', strtotime($time_value));
+          echo "データ取得日：", date('Y年m月d日', strtotime($time_value)), "15時現在";
           ?>
 
           <h3>世界累積データ</h3>
@@ -39,11 +39,10 @@
           <?php
           foreach ($arr as $data) {
             $contry = "　　　国名：　" . $data['dataName'] . "\n" . "<br>";
-            $cases = "感染者数：　" . $data['infectedNum'] . "人\n" . "<br>";
-            $deaths = "　死者数：　" . $data['deceasedNum'] . "人\n" . "<br><HR>";
-
+            $infectedNum = "感染者数：　" . $data['infectedNum'] . "人\n" . "<br>";
+            $deceasedNum = "　死者数：　" . $data['deceasedNum'] . "人\n" . "<br><HR>";
             $virusData = array(
-              $contry, $cases, $deaths
+              $contry, $infectedNum, $deceasedNum
             );
             echo implode('▲', $virusData);
           }
