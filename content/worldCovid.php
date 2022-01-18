@@ -36,11 +36,24 @@
           </div>
 
           <h3>各国別データ</h3>
+          <p><small><span class="error">※感染者数順に参照</span></small></p>
           <?php
-          foreach ($arr as $data) {
+          //国名のデータのみ切り取り
+          $slice = array_slice($arr, 0, 195);
+          //ソートの為、カンマを置換で取り出してソート後にフォーマット
+          array_walk_recursive($slice, function (&$value, $key) {
+            $value = str_replace(",", "", $value);
+          });
+          //降順にソート
+          foreach ($slice as $key => $value) {
+            $sort[$key] = $value['infectedNum'];
+          }
+          array_multisort($sort, SORT_DESC, $slice);
+          //データの出力
+          foreach ($slice as $data) {
             $contry = "　　　国名：　" . $data['dataName'] . "\n" . "<br>";
-            $infectedNum = "感染者数：　" . $data['infectedNum'] . "人\n" . "<br>";
-            $deceasedNum = "　死者数：　" . $data['deceasedNum'] . "人\n" . "<br><HR>";
+            $infectedNum = "感染者数：　" . number_format($data['infectedNum']) . "人\n" . "<br>";
+            $deceasedNum = "　死者数：　" . number_format($data['deceasedNum']) . "人\n" . "<br><HR>";
             $virusData = array(
               $contry, $infectedNum, $deceasedNum
             );
