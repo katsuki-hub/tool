@@ -45,14 +45,14 @@
             $sumDeaths_fmt = number_format($sumDeaths);
             $sumPcr_fmt = number_format($sumPcr);
             //出力フォーム
-            $allPopulation = "日本の人口：　" . $sumPopulation_fmt . "人\n" . "<br>" . PHP_EOL;
             $allCases = "感染者数　：　" . $sumCases_fmt . "人\n" . "<br>" . PHP_EOL;
             $allDeaths = "死者数　　：　" . $sumDeaths_fmt . "人\n" . "<br>" . PHP_EOL;
             $allPcr = "PCR件数　：　" . $sumPcr_fmt . "人\n" . "<br>" . PHP_EOL;
-            echo "$allPopulation";
+            $allPopulation = "日本の人口：　" . $sumPopulation_fmt . "人\n" . "<br>" . PHP_EOL;
             echo "$allCases";
             echo "$allDeaths";
             echo "$allPcr";
+            echo "$allPopulation";
             ?>
           </div>
 
@@ -70,12 +70,12 @@
           <?php
           foreach ($arr as $data) {
             $ja = "都道府県名：　" . $data['name_ja'] . "\n" . "<br>" . PHP_EOL;
-            $population = "人口　　：　" . number_format($data['population']) . "人\n" . "\n" . "<br>" . PHP_EOL;
             $cases = "感染者数：　" . number_format($data['cases']) . "人\n" . "<br>" . PHP_EOL;
             $deaths = "死者数　：　" . number_format($data['deaths']) . "人\n" . "<br>" . PHP_EOL;
-            $pcr = "PCR件数：　" . number_format($data['pcr']) . "人\n" . "<br>" . "<HR>" . PHP_EOL;
+            $pcr = "PCR件数：　" . number_format($data['pcr']) . "人\n" . "<br>" . PHP_EOL;
+            $population = "人口　　：　" . number_format($data['population']) . "人\n" . "\n" . "<br><HR>" . PHP_EOL;
             $virusData = array(
-              $ja, $population, $cases, $deaths, $pcr,
+              $ja, $cases, $deaths, $pcr, $population
             );
             echo implode('▲', $virusData);
           }
