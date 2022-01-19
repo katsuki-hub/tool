@@ -56,6 +56,7 @@
     </div><!-- /main-wrapper -->
   </div><!-- /wall -->
   <footer>
+    <a href="content/cividDay.php">TEST</a>
     <?php require_once "common/footer.php"; ?>
   </footer>
 </body>
