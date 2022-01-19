@@ -64,7 +64,7 @@
 
           <!--入力フォーム-->
           <form method="POST" action="<?php echo es($_SERVER['PHP_SELF']); ?>">
-            <ul class="nolist">
+            <ul>
               <li>
                 <label>
                   希望額：<input type="number" name="cash" value="<?php echo $cash; ?>">
@@ -88,7 +88,7 @@
             $buyBonds_fmt = number_format($buyBonds);
             $bondsRate = 1 - $interest;
             $bondsRate100 = floor($bondsRate * 100 * 100) / 100;
-            echo '<div class = "frame">', '<span class="line">', "調達希望額が{$cash_fmt}円の場合", '</span><br>', "買取債権額は<b>{$buyBonds_fmt}円</b>です。<br>債権から{$bondsRate100}％引きになります。", '</div>';
+            echo '<div class = "frame">', '<span class="line">', "調達希望額が{$cash_fmt}円の場合", '</span><br><br>', "買取債権額は<b>{$buyBonds_fmt}円</b>です。<br>債権から{$bondsRate100}％引きになります。", '</div>';
           }
           ?>
 
@@ -132,7 +132,7 @@
 
           <!--入力フォーム-->
           <form method="POST" action="<?php echo es($_SERVER['PHP_SELF']); ?>">
-            <ul class="nolist">
+            <ul>
               <li>
                 <label>
                   債権額：<input type="number" name="cash3" value="<?php echo $cash3; ?>">
@@ -156,7 +156,7 @@
             $buyBonds_fmt4 = number_format($buyBonds4);
             $bondsRate4 = 1 - $interest4;
             $bondsRate4100 = floor($bondsRate4 * 100 * 100) / 100;
-            echo '<div class = "frame">', '<span class="line">', "売掛債権額が{$cash_fmt3}円の場合", '</span><br>', "資金調達額は<b>{$buyBonds_fmt4}円</b>です。<br>債権から{$bondsRate4100}％引きになります。", '</div>';
+            echo '<div class = "frame">', '<span class="line">', "売掛債権額が{$cash_fmt3}円の場合", '</span><br><br>', "資金調達額は<b>{$buyBonds_fmt4}円</b>です。<br>債権から{$bondsRate4100}％引きになります。", '</div>';
           }
           ?>
 

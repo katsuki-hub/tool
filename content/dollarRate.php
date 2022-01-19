@@ -73,7 +73,7 @@
           <h3>日本円に換算したい＄を入力してください</h3>
           <!--入力フォーム-->
           <form method="POST" action="<?php echo es($_SERVER['PHP_SELF']); ?>">
-            <ul class="nolist">
+            <ul>
               <li>
                 <label>
                   <input type="number" name="toYen" value="<?php echo $toYen; ?>">
@@ -100,7 +100,7 @@
           <h3>米ドルに換算したい￥を入力してください</h3>
           <!--入力フォーム-->
           <form method="POST" action="<?php echo es($_SERVER['PHP_SELF']); ?>">
-            <ul class="nolist">
+            <ul>
               <li>
                 <label>
                   <input type="number" name="toDoll" value="<?php echo $toDoll; ?>">
