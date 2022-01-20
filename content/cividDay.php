@@ -11,6 +11,12 @@
       }
     }
 
+    @media screen and (min-width:600px) {
+      table {
+        font-size: 20px;
+      }
+    }
+
     .th {
       background-color: rgba(126, 179, 140, 0.6);
     }
