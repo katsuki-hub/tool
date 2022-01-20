@@ -48,6 +48,7 @@
         <div class="column">
           <a href="content/covid.php" class="clm3"><img src="images/covid.png" alt="covid累積"></a>
           <a href="content/worldCovid.php" class="clm3"><img src="images/covid_world.png" alt="世界累積データ"></a>
+          <a href="content/cividDay.php" class="clm3"><img src="images/covid_fukuoka.png" alt="covid福岡"></a>
           <a href="content/rate.php" class="clm3"><img src="images/saiken.png" alt="債権係数"></a>
           <a href="content/dollarRate.php" class="clm3"><img src="images/yendol.png" alt="円ドル変換"></a>
           <a href="content/interest.php" class="clm3"><img src="images/risoku.png" alt="利息計算"></a>
@@ -56,7 +57,6 @@
     </div><!-- /main-wrapper -->
   </div><!-- /wall -->
   <footer>
-    <a href="content/cividDay.php">TEST</a>
     <?php require_once "common/footer.php"; ?>
   </footer>
 </body>
