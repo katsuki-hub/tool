@@ -7,7 +7,7 @@
   <style>
     @media screen and (max-width:500px) {
       table {
-        font-size: 10px;
+        font-size: 13px;
       }
     }
 
