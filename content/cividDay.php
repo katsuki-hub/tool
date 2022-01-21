@@ -38,7 +38,7 @@
 
 <body>
   <header>
-    <?php $headerTitle = "CIVUD 日別感染数" ?>
+    <?php $headerTitle = "COVID 福岡県 日別感染数" ?>
     <?php require_once "../common/header.php"; ?>
   </header>
   <div class="wall">
@@ -50,7 +50,7 @@
           <small>※データは厚生労働省が発行しているオープンデータを参照<br>（都道府県・政令指定都市・中核都市が毎日HPにて発表するデータおよびHER-SYSデータに基づいた患者属性情報）</small>
           <div class="br30"></div>
           <div>
-            <canvas id="myChart" height="180px"></canvas>
+            <canvas id="myChart" height="180"></canvas>
           </div>
           <?php
           //https://covid19.mhlw.go.jp/public/opendata/newly_confirmed_cases_daily.csv
