@@ -7,8 +7,8 @@
     <!-- ナビの数が増えた場合縦スクロールするためのdiv -->
     <div id="g-nav-list">
       <ul>
-        <li><a href="https://tool.katsumaru.blog/">Top</a></li>
-        <li><a href="https://tool.katsumaru.blog/content/covid.php/">COVID 県別累積</a></li>
+        <li><a href="https://tool.katsumaru.blog">Top</a></li>
+        <li><a href="https://tool.katsumaru.blog/content/covid.php">COVID 県別累積</a></li>
         <li><a href="https://tool.katsumaru.blog/content/worldCovid.php">COVID World</a></li>
         <li><a href="https://tool.katsumaru.blog/content/cividDay.php">COVID 福岡</a></li>
         <li><a href="https://tool.katsumaru.blog/content/rate.php">債権係数</a></li>
