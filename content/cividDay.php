@@ -80,16 +80,11 @@
           fclose($csv);
           ?>
 
-
-
         </section>
       </article>
     </div><!-- /main-wrapper -->
   </div><!-- /wall -->
-  <footer>
-    <?php require_once "../common/footer.php"; ?>
-  </footer>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <?php require_once "../common/footer.php"; ?>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js" integrity="sha512-TW5s0IT/IppJtu76UbysrBH9Hy/5X41OTAbQuffZFU6lQ1rdcLHzpU5BzVvr/YFykoiMYZVWlr/PX1mDcfM9Qg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script>
     var ctx = document.getElementById('myChart').getContext('2d');
