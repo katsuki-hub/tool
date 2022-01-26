@@ -257,7 +257,7 @@ table {
 .openbtn span:nth-of-type(2) {
   top: 12px;
   left: 8px;
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
   color: rgb(77, 72, 20);
   font-weight: bold;
