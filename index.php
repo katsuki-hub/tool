@@ -9,7 +9,7 @@
   <title>WEBツールボックス</title>
   <meta name="description" content="仕事ツール等の便利なWEBツールサイトです">
   <meta name="keywords" content="WEBツール,プログラミング,便利ボックス">
-  <link href="css/style.css?v=20220119" rel="stylesheet" type="text/css">
+  <link href="css/style.css?v=20220126" rel="stylesheet" type="text/css">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="192x192" href="android-touch-icon.png">
@@ -56,7 +56,11 @@
       </section>
     </div><!-- /main-wrapper -->
   </div><!-- /wall -->
-  <?php require_once "common/footer.php"; ?>
+  <footer>
+    <small>&copy; 2021 かつまるツールボックス</small>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="script/command.js"></script>
 </body>
 
 
