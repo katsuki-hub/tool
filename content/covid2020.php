@@ -9,7 +9,7 @@
 
 <body>
   <header>
-    <?php $headerTitle = "COVID 福岡県 2020年感染数" ?>
+    <?php $headerTitle = "2020年感染者数" ?>
     <?php require_once "../common/header.php"; ?>
   </header>
   <div class="wall">
