@@ -1,44 +1,15 @@
 <!doctype html>
-<html lang="ja" prefix="og:http://ogp.me/ns#">
+<html lang="covid2020" prefix="og:http://ogp.me/ns#">
 
 <head>
-  <?php $title = "コロナウイルス日別感染数" ?>
+  <?php $title = "コロナウイルス日別感染数2020年" ?>
   <?php require_once "../common/head.php"; ?>
-  <style>
-    @media screen and (max-width:500px) {
-      table {
-        font-size: 13px;
-      }
-    }
-
-    @media screen and (min-width:600px) {
-      table {
-        font-size: 20px;
-      }
-    }
-
-    .th {
-      background-color: rgba(126, 179, 140, 0.6);
-    }
-
-    .day {
-      background-color: rgba(126, 179, 140, 0.2);
-    }
-
-    .all {
-      background-color: rgba(255, 207, 205, 0.6);
-      ;
-    }
-
-    .fukuoka {
-      background-color: rgba(160, 245, 126, 0.6);
-    }
-  </style>
+  <link href="../css/covidOption.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
   <header>
-    <?php $headerTitle = "COVID 福岡県 日別感染数" ?>
+    <?php $headerTitle = "COVID 福岡県 2020年感染数" ?>
     <?php require_once "../common/header.php"; ?>
   </header>
   <div class="wall">
@@ -46,15 +17,24 @@
       <article>
         <section>
           <h2>福岡県の新規感染者データ</h2>
-          <h3>直近の日別データ</h3>
           <small>※データは厚生労働省が発行しているオープンデータを参照<br>（都道府県・政令指定都市・中核都市が毎日HPにて発表するデータおよびHER-SYSデータに基づいた患者属性情報）</small>
+          <h3>2020年の日別データ</h3>
           <div class="br30"></div>
           <div>
             <canvas id="myChart" height="180"></canvas>
           </div>
+          <div class="yearSelect">
+            <form id="form">
+              <select name="select">
+                <option value="covidDay.php">2022年</option>
+                <option value="covid2021.php">2021年</option>
+                <option value="covid2020.php">2020年</option>
+              </select>
+            </form>
+          </div>
           <?php
           //https://covid19.mhlw.go.jp/public/opendata/newly_confirmed_cases_daily.csv
-          $csv = fopen('../data/newly_confirmed_cases_daily.csv', 'r');
+          $csv = fopen('../data/covid_2020.csv', 'r');
 
           echo '<table border="8">';
           echo '<tr class="th">
@@ -65,7 +45,7 @@
           <th>大阪府</th>
           <th>沖縄県</th>
           </tr>';
-          while (($csvdata = fgetcsv($csv, 80008000)) !== false) {
+          while (($csvdata = fgetcsv($csv, 8000)) !== false) {
             list($item_date, $item_infection,,,,,,,,,,,,, $item_tokyo,,,,,,,,,,,,,, $item_osaka,,,,,,,,,,,,, $item_fukuoka,,,,,,, $item_okinawa) = $csvdata;
 
             $all = number_format($item_infection);
@@ -86,16 +66,17 @@
   </div><!-- /wall -->
   <?php require_once "../common/footer.php"; ?>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js" integrity="sha512-TW5s0IT/IppJtu76UbysrBH9Hy/5X41OTAbQuffZFU6lQ1rdcLHzpU5BzVvr/YFykoiMYZVWlr/PX1mDcfM9Qg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="../script/location.js"></script>
   <script>
     var ctx = document.getElementById('myChart').getContext('2d');
     var myChart = new Chart(ctx, {
       type: 'bar',
       data: {
-        labels: ['2021年4月', '5月', '6月', '7月', "8月", "9月", "10月", "11月", "12月"],
+        labels: ['2020年1月', '2月', '3月', '4月', '5月', '6月', '7月', "8月", "9月", "10月", "11月", "12月"],
         datasets: [{
             type: 'bar',
             label: "全国感染者",
-            data: [117482, 153674, 52977, 126687, 567572, 208102, 17389, 4371, 5805],
+            data: [12, 193, 1930, 12089, 2511, 1747, 17373, 31981, 15045, 17529, 47158, 86541],
             backgroundColor: "rgba(255, 99, 132, 0.2)",
             borderColor: 'rgb(255, 99, 132)',
             borderWidth: 1,
@@ -104,7 +85,7 @@
           {
             type: 'line', //折れ線グラフ
             label: "福岡県",
-            data: [4418, 10688, 1433, 434, 25703, 8818, 548, 182, 182],
+            data: [0, 2, 44, 596, 117, 92, 1074, 2671, 444, 187, 601, 3138],
             backgroundColor: "rgba(54,162,235,0.2)",
             borderColor: "rgb(54,162,235)",
             borderWidth: 1.2,
