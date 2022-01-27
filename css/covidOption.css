@@ -5,6 +5,7 @@
 =====================*/
 
 .yearSelect {
+  max-width: 500px;
   overflow: hidden;
   width: 90%;
   margin: 2em auto;
@@ -50,6 +51,11 @@
 /*=====================
 テーブル
 =====================*/
+
+.chart {
+  max-width: 700px;
+  margin: auto;
+}
 
 @media screen and (max-width:500px) {
   table {
