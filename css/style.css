@@ -421,7 +421,7 @@ table {
 =====================*/
 @media screen and (max-width:500px) {
   #g-nav li a {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .clm3 {
