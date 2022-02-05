@@ -55,15 +55,13 @@ header {
   margin: 5px 20px;
 }
 
-#charactor {
-  overflow: hidden;
-}
+#charactor {}
 
 .chara {
   background: url("../images/boat.png")no-repeat;
-  background-size: 22%;
-  width: 100%;
-  height: 15%;
+  background-size: 20%;
+  width: 102%;
+  min-height: 300px;
   max-width: 900px;
   position: absolute;
   z-index: 10;
@@ -74,10 +72,10 @@ header {
 
 .chara2 {
   background: url("../images/bike.png")no-repeat;
-  background-size: 22%;
+  background-size: 20%;
   max-width: 900px;
-  width: 100%;
-  height: 15%;
+  width: 102%;
+  min-height: 300px;
   position: absolute;
   z-index: 10;
   top: 60px;
@@ -193,7 +191,7 @@ footer {
 }
 
 .br50 {
-  height: 50px;
+  height: 60px;
 }
 
 .br100 {
