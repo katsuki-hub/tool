@@ -9,7 +9,6 @@ html, body {
   font-size: 100%;
   vertical-align: baseline;
   line-height: 1.5;
-  height: 100%;
 }
 
 body {
@@ -51,32 +50,38 @@ header {
 }
 
 .main-wrapper {
-  min-height: 100vh;
+  min-height: 88vh;
   padding-top: 60px;
   margin: 5px 20px;
 }
 
+#charactor {
+  overflow: hidden;
+}
+
 .chara {
   background: url("../images/boat.png")no-repeat;
-  background-size: 20%;
+  background-size: 22%;
   width: 100%;
-  height: 100%;
+  height: 15%;
   max-width: 900px;
   position: absolute;
   z-index: 10;
   top: 60px;
+  left: -20px;
   animation: stepline 10s steps(250) infinite;
 }
 
 .chara2 {
   background: url("../images/bike.png")no-repeat;
-  background-size: 20%;
+  background-size: 22%;
   max-width: 900px;
   width: 100%;
-  height: 100%;
+  height: 15%;
   position: absolute;
   z-index: 10;
   top: 60px;
+  left: -20px;
   animation: stepline2 10s steps(250) infinite;
 }
 
@@ -131,8 +136,7 @@ h3 {
 }
 
 #private {
-  position:absolute;
-  z-index: 100;
+  
 }
 
 section li {

@@ -41,8 +41,10 @@
   </header>
   <div class="wall">
     <div class="main-wrapper">
-      <div class="chara"></div>
-      <div class="chara2"></div>
+      <section id="charactor">
+        <div class="chara"></div>
+        <div class="chara2"></div>
+      </section>
       <div class="br50"></div>
       <section>
         <div class="column">
