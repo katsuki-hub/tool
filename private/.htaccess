@@ -1,0 +1,8 @@
+AuthType  Basic
+AuthName  "Management File"
+AuthUserFile  /home/users/2/main.jp-6775f33d59c879fe/web/tool/private/.htpasswd
+require valid-user
+
+<Files ~ "^\.ht">
+   deny from all
+</Files>

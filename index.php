@@ -54,6 +54,13 @@
           <a href="content/interest.php" class="clm3"><img src="images/risoku.png" alt="利息計算"></a>
         </div><!-- /column -->
       </section>
+      <div class="br50"></div>
+      <section id="private">
+        <h3>管理者用ページ</h3>
+        <ul>
+          <li><a href="private/write.php">Add File</a></li>
+        </ul>
+      </section>
     </div><!-- /main-wrapper -->
   </div><!-- /wall -->
   <footer>
