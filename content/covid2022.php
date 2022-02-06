@@ -27,7 +27,7 @@
           <div class="yearSelect">
             <form id="form">
               <select name="select">
-                <option value="covidDay.php">2022年</option>
+                <option value="covid2022.php">2022年</option>
                 <option value="covid2021.php">2021年</option>
                 <option value="covid2020.php">2020年</option>
               </select>
@@ -35,7 +35,7 @@
           </div>
           <?php
           //https://covid19.mhlw.go.jp/public/opendata/newly_confirmed_cases_daily.csv
-          $csv = fopen('../data/newly_confirmed_cases_daily.csv', 'r');
+          $csv = fopen('../data/covid_2022.csv', 'r');
 
           echo '<table border="8">';
           echo '<tr class="th">
