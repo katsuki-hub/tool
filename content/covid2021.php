@@ -26,7 +26,7 @@
           <div class="yearSelect">
             <form id="form">
               <select name="select">
-                <option value="covidDay.php">2022年</option>
+                <option value="covid2022.php">2022年</option>
                 <option value="covid2021.php">2021年</option>
                 <option value="covid2020.php">2020年</option>
               </select>
