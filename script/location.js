@@ -6,7 +6,7 @@ var lang = document.querySelector("html").lang;
 
 var opt;
 if (lang === "covid2022") {
-  opt = document.querySelector('option[value="covidDay.php"]');
+  opt = document.querySelector('option[value="covid2022.php"]');
 } else if (lang === "covid2021") {
   opt = document.querySelector('option[value="covid2021.php"]');
 } else if (lang === "covid2020") {
