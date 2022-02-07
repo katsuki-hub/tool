@@ -19,7 +19,7 @@
           <form method="POST" action="writeData.php">
             <ul>
               <li>
-                <textarea name="csvData" cols="40" rows="8" maxlength="1000" placeholder="データ追記"></textarea>
+                <textarea name="csvData" cols="35" rows="8" maxlength="1000" placeholder="データ追記"></textarea>
               </li>
               <li><input type="submit" value="送信する"></li>
             </ul>
