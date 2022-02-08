@@ -12,8 +12,9 @@ $fp = fopen($filename, "ab");
 flock($fp, LOCK_EX);
 fwrite($fp, $csvData . "\n");
 flock($fp, LOCK_UN);
+fclose($fp);
 
 //リダイレクト
-$url = "http://localhost/develop/tool/content/covid2022.php";
+$url = "https://tool.katsumaru.blog/content/covid2022.php";
 header("Location:" . $url);
 exit();
