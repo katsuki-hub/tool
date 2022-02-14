@@ -226,6 +226,14 @@ table {
   margin: 30px auto;
 }
 
+th {
+  background: #bbeb6d;
+}
+
+td {
+  background: #dadada;
+}
+
 /*=====================
 ハンバーグメニュー
 =====================*/

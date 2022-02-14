@@ -61,6 +61,7 @@
         <h3>管理者用ページ</h3>
         <ul>
           <li><a href="private/write.php">Add File</a></li>
+          <li><a href="private/classicForm.php">classic</a></li>
         </ul>
       </section>
     </div><!-- /main-wrapper -->
