@@ -54,6 +54,7 @@
           <a href="content/rate.php" class="clm3"><img src="images/saiken.png" alt="債権係数"></a>
           <a href="content/dollarRate.php" class="clm3"><img src="images/yendol.png" alt="円ドル変換"></a>
           <a href="content/interest.php" class="clm3"><img src="images/risoku.png" alt="利息計算"></a>
+          <a href="content/pokemon.php" class="clm3"><img src="" alt="ポケモン図鑑"></a>
         </div><!-- /column -->
       </section>
       <div class="br50"></div>
