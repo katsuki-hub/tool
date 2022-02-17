@@ -34,11 +34,9 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
       text-align: center;
       font-weight: bold;
       font-size: 22px;
-<<<<<<< HEAD
     }
     .status {
       margin-top: -30px;
-=======
       overflow: hidden;
       width: 100%;
     }
@@ -57,7 +55,6 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
       width: 45%;
       text-align: left;
       font-size: 15px;
->>>>>>> 3594491376dfce0e291b53c6e10de8a19f76d634
     }
   </style>
 </head>
