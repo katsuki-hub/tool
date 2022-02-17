@@ -33,7 +33,10 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
     .pokename {
       text-align: center;
       font-weight: bold;
-      font-size: 18px;
+      font-size: 22px;
+    }
+    .status {
+      margin-top: -30px;
     }
   </style>
 </head>
@@ -79,7 +82,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
               echo "<td>", es($row['hiddenAbilities']), "</td>";
               echo "</tr>";
               echo "</table>";
-              echo "<table border=1>";
+              echo '<table border=1 class="status">';
               echo "<tr>";
               echo "<th>", "HP", "</th>";
               echo "<th>", "攻撃", "</th>";
