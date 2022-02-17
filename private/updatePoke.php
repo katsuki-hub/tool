@@ -68,14 +68,10 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
           $pdo = new PDO($dsn, $user, $passwoed);
           $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
           $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-          $sql = "UPDATE `pokemon-data` SET `Classification` = ':Classification', `height` = ':height', `weight` = ':weight' WHERE CONCAT(`pokemon-data`.`no`) = ':no';";
+          $sql = "UPDATE `pokemon-data` SET `Classification` = '$Classification', `height` = '$height', `weight` = '$weight' WHERE CONCAT(`pokemon-data`.`no`) = $no";
 
           $stm = $pdo->prepare($sql);
-          $stm->bindValue(':no', $no, PDO::PARAM_INT);
-          $stm->bindValue(':Classification', $Classification, PDO::PARAM_STR);
-          $stm->bindValue(':height', $height, PDO::PARAM_INT);
-          $stm->bindValue(':weight', $weight, PDO::PARAM_INT);
-          echo "入力完了です！"
+          echo "入力完了です！";
         } catch (Exception $e) {
           echo '<span class="error">エラーがありました</span><br>';
           echo $e->getMessage();
