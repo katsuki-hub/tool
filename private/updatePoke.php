@@ -71,6 +71,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
           $sql = "UPDATE `pokemon-data` SET `Classification` = '$Classification', `height` = '$height', `weight` = '$weight' WHERE CONCAT(`pokemon-data`.`no`) = $no";
 
           $stm = $pdo->prepare($sql);
+          $stm->execute(); //sql文の実行！！！！
           echo "入力完了です！";
         } catch (Exception $e) {
           echo '<span class="error">エラーがありました</span><br>';
