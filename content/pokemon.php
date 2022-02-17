@@ -16,8 +16,8 @@
       <article>
         <section>
           <h2>ポケモン図鑑</h2>
-          <!-- 
-          <form method="POST" action="pokeSearch.php">
+          
+          <form method="POST" action="nameSearch.php">
             <ul>
               <li>
                 <label>ポケモンを検索：<br>
@@ -27,7 +27,6 @@
               <li><input type="submit" value="検索する"></li>
             </ul>
           </form><br>
-          -->
 
           <form method="POST" action="pokeSearch.php">
             <ul>
