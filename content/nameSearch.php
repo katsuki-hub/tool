@@ -10,7 +10,7 @@ if (!checkEn($_POST)) { //エンコードチェック
 if (empty($_POST)) { //空の時エラー
   header("Location:{$backURL}");
   exit();
-} else if (!isset($_POST["type"]) || ($_POST["type"] === "")) {
+} else if (!isset($_POST["name"]) || ($_POST["name"] === "")) {
   header("Location:{$backURL}");
   exit();
 }
@@ -34,11 +34,6 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
       text-align: center;
       font-weight: bold;
       font-size: 22px;
-<<<<<<< HEAD
-    }
-    .status {
-      margin-top: -30px;
-=======
       overflow: hidden;
       width: 100%;
     }
@@ -57,7 +52,6 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
       width: 45%;
       text-align: left;
       font-size: 15px;
->>>>>>> 3594491376dfce0e291b53c6e10de8a19f76d634
     }
   </style>
 </head>
@@ -72,18 +66,18 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
       <section>
         <h2>ポケモンデータ</h2>
         <?php
-        $type = $_POST["type"];
+        $name = $_POST["name"];
         try {
           $pdo = new PDO($dsn, $user, $passwoed);
           $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
           $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-          $sql = "SELECT*FROM `pokemon-data` WHERE types1 LIKE(:type) OR types2 LIKE'%$type%'";
+          $sql = "SELECT*FROM `pokemon-data` WHERE name LIKE(:name)";
           $stm = $pdo->prepare($sql); //プリペアドステートメント作成
-          $stm->bindValue(':type', "%{$type}%", PDO::PARAM_STR);
+          $stm->bindValue(':name', "%{$name}%", PDO::PARAM_STR);
           $stm->execute(); //SQL文の実行
           $result = $stm->fetchAll(PDO::FETCH_ASSOC);
           if (count($result) > 0) {
-            echo "{$type}タイプのポケモン一覧", "\n", "<br><br>", PHP_EOL;
+            echo "{$name}タイプのポケモン一覧", "\n", "<br><br>", PHP_EOL;
             foreach ($result as $row) {
               echo '<div class="pokename">';
               echo "No：", es($row['no']), "\n", "<br>", PHP_EOL;
@@ -137,7 +131,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
               echo "</table><br><HR>";
             }
           } else {
-            echo "{$type}ポケモンは見つかりませんでした。";
+            echo "{$name}ポケモンは見つかりませんでした。";
           }
         } catch (Exception $e) {
           echo '<span class="error">エラーがありました</span><br>';

@@ -63,6 +63,7 @@
         <ul>
           <li><a href="private/write.php">Add File</a></li>
           <li><a href="private/classicForm.php">classic</a></li>
+          <li><a href="private/pokeForm.php">pokemon-data</a></li>
         </ul>
       </section>
     </div><!-- /main-wrapper -->

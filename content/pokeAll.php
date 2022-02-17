@@ -34,7 +34,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
             $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
             //例外がスローされる設定にする
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $sql = "SELECT * FROM `pokemon-data-book`"; //SQL文を作る
+            $sql = "SELECT * FROM `pokemon-data`"; //SQL文を作る
             $stm = $pdo->prepare($sql); //プリペアドステートメントを作る
             $stm->execute(); //SQL文を実行
             $result = $stm->fetchAll(PDO::FETCH_ASSOC); //結果の取得(連想配列で受け取る)
@@ -44,6 +44,9 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
             echo "<th>", "なまえ", "</th>";
             echo "<th>", "タイプ1", "</th>";
             echo "<th>", "タイプ2", "</th>";
+            echo "<th>", "分類", "</th>";
+            echo "<th>", "高さ", "</th>";
+            echo "<th>", "重さ", "</th>";
             echo "</tr>";
 
             foreach ($result as $row) {
@@ -52,6 +55,9 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
               echo "<td>", es($row['name']), "</td>";
               echo "<td>", es($row['types1']), "</td>";
               echo "<td>", es($row['types2']), "</td>";
+              echo "<td>", es($row['Classification']), "</td>";
+              echo "<td>", es($row['height']), "m", "</td>";
+              echo "<td>", es($row['weight']), "kg", "</td>";
               echo "</tr>";
             }
             echo "</table>";
