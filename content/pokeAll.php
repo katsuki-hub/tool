@@ -15,6 +15,14 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
 <head>
   <?php $title = "ポケモン図鑑" ?>
   <?php require_once "../common/head.php"; ?>
+  <style>
+    @media screen and (max-width:500px) {
+      table {
+        font-size: 13px;
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 
 <body>

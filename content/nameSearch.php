@@ -30,6 +30,10 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
   <?php $title = "ポケモン図鑑" ?>
   <?php require_once "../common/head.php"; ?>
   <style>
+    table {
+      text-align: center;
+    }
+
     .pokename {
       text-align: center;
       font-weight: bold;
