@@ -51,7 +51,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
       float: right;
       width: 45%;
       text-align: left;
-      font-size: 18px;
+      font-size: 15px;
     }
   </style>
 </head>
@@ -82,6 +82,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
               echo '<div class="pokename">';
               echo "No：", es($row['no']), "\n", "<br>", PHP_EOL;
               echo es($row['name']), "\n", "<br>", PHP_EOL;
+              echo "<p>" . es($row['form']) . "</p>";
 
               echo '<div class="left">';
               echo '<img src="../images/pokemon/' . es($row['no']) . '.png">';
@@ -127,8 +128,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
               echo "<td>", es($row['speed']), "</td>";
               echo "<td>", es($row['total']), "</td>";
               echo "</tr>";
-              echo "</table>";
-              echo "<p>" . es($row['form']) . "</p><br><HR>";
+              echo "</table><br><HR>";
             }
           } else {
             echo "{$type}ポケモンは見つかりませんでした。";
