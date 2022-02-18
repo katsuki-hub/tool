@@ -72,6 +72,7 @@
             <li><a href="write.php">covid FUKUOKA Add File</a></li>
             <li><a href="classicForm.php">classic</a></li>
             <li><a href="pokeForm.php">POKEMON ~Size Data~</a></li>
+            <li><a href="pokeProfAdd.php">POKEMON ~Profile Data~</a></li>
           </ul>
         </div>
       </section>
