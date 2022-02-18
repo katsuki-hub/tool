@@ -14,6 +14,7 @@
         <li><a href="https://tool.katsumaru.blog/content/rate.php">債権係数</a></li>
         <li><a href="https://tool.katsumaru.blog/content/dollarRate.php">円ドル変換</a></li>
         <li><a href="https://tool.katsumaru.blog/content/interest.php">利息計算</a></li>
+        <li><a href="https://tool.katsumaru.blog/content/pokemon.php">ポケモン図鑑</a></li>
       </ul>
     </div>
   </nav>

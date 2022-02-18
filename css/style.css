@@ -219,6 +219,14 @@ footer {
   border: 4px dashed #444444;
 }
 
+.prof {
+  padding: 10px;
+  margin: -30px 0 10px 0;
+  font-size: 13px;
+  background-color: rgba(212, 195, 137, 0.8);
+  line-height: 1.8em;
+}
+
 .frame li {
   list-style: square;
 }
@@ -238,6 +246,10 @@ th {
 
 td {
   background: #dadada;
+}
+
+.pv {
+  text-align: right;
 }
 
 /*=====================

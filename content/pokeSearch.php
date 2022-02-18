@@ -16,10 +16,10 @@ if (empty($_POST)) { //空の時エラー
 }
 
 //接続パラメーター
-$user = 'LAA1192529';
+$user = 'katsuki';
 $passwoed = 'katsu4426';
-$dbName = 'LAA1192529-tool';
-$host = 'mysql202.phy.lolipop.lan';
+$dbName = 'pokemon';
+$host = 'localhost:3306';
 $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
 ?>
 
@@ -138,7 +138,10 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
               echo "<td>", es($row['speed']), "</td>";
               echo "<td>", es($row['total']), "</td>";
               echo "</tr>";
-              echo "</table><br><HR>";
+              echo "</table>";
+              echo '<div class="prof">';
+              echo es($row['profile']);
+              echo '</div><br><HR>';
             }
           } else {
             echo "{$type}ポケモンは見つかりませんでした。";
