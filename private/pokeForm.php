@@ -15,7 +15,7 @@
     <div class="main-wrapper">
       <article>
         <section>
-          <h2>classic2022 Data Add</h2>
+          <h2>UPDATE ポケモン</h2>
           <form method="POST" action="updatePoke.php">
             <ul>
               <li><label>ＮＯ：

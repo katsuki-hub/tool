@@ -15,14 +15,14 @@
     <div class="main-wrapper">
       <article>
         <section>
-          <h2>ポケモン Profile Data Add</h2>
+          <h2>Profile Data UPDATE</h2>
           <form method="POST" action="updateProfile.php">
             <ul>
               <li><label>ＮＯ：
                   <input type="number" name="no" placeholder="番号">
                 </label></li><br>
               <li>
-                <textarea name="profile" cols="40" rows="8" maxlength="100" placeholder="プロフィール入力"></textarea>
+                <textarea name="profile" cols="35" rows="8" maxlength="100" placeholder="プロフィール入力"></textarea>
               </li>
               <li><input type="submit" value="更新する"></li>
             </ul>

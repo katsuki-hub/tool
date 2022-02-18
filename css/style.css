@@ -219,7 +219,7 @@ footer {
 
 .prof {
   padding: 10px;
-  margin: -30px 0 10px 0;
+  margin: -30px 0 20px 0;
   font-size: 13px;
   background-color: rgba(212, 195, 137, 0.8);
   line-height: 1.8em;
@@ -430,6 +430,21 @@ td {
 @media screen and (min-width:420px) {
   .br50 {
     height: 100px;
+  }
+}
+
+/*=====================
+500px以上
+=====================*/
+@media screen and (min-width:500px) {
+  .pokeculum {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .culum2 {
+    width: 48%;
+    margin: 10px auto;
   }
 }
 

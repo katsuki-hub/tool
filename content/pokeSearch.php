@@ -32,6 +32,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
   <style>
     table {
       text-align: center;
+      font-size: 15px;
     }
 
     .pokename {
@@ -42,14 +43,13 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
       width: 100%;
     }
 
-    .status {
-      margin-top: -30px;
-      overflow: hidden;
+    .typeStatus {
       width: 100%;
     }
 
     .status {
       margin-top: -30px;
+      width: 100%;
     }
 
     .left img {
@@ -62,6 +62,10 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
       width: 45%;
       text-align: left;
       font-size: 15px;
+    }
+
+    .folm {
+      color: rgb(240, 167, 22);
     }
   </style>
 </head>
@@ -88,11 +92,13 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
           $result = $stm->fetchAll(PDO::FETCH_ASSOC);
           if (count($result) > 0) {
             echo "{$type}タイプのポケモン一覧", "\n", "<br><br>", PHP_EOL;
+            echo '<div class="pokeculum">';
             foreach ($result as $row) {
+              echo '<div class="culum2">';
               echo '<div class="pokename">';
               echo "No：", es($row['no']), "\n", "<br>", PHP_EOL;
               echo es($row['name']), "\n", "<br>", PHP_EOL;
-              echo "<p>" . es($row['form']) . "</p>";
+              echo '<span class="folm">' . es($row['form']) . '</span>';
 
               echo '<div class="left">';
               echo '<img src="../images/pokemon/' . es($row['no']) . '.png">';
@@ -102,10 +108,11 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
               echo "分類：", es($row['Classification']), "ポケモン", "\n", "<br>", PHP_EOL;
               echo "高さ：", es($row['height']), "m", "\n", "<br>", PHP_EOL;
               echo "重さ：", es($row['weight']), "kg", "\n", "<br>", PHP_EOL;
+
               echo '</div>';
               echo '</div>';
 
-              echo "<table border=1>";
+              echo '<table border=1 class="typeStatus">';
               echo "<tr>";
               echo "<th>", "タイプ1", "</th>";
               echo "<th>", "タイプ2", "</th>";
@@ -142,6 +149,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
               echo '<div class="prof">';
               echo es($row['profile']);
               echo '</div><br><HR>';
+              echo '</div>';
             }
           } else {
             echo "{$type}ポケモンは見つかりませんでした。";
@@ -150,6 +158,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
           echo '<span class="error">エラーがありました</span><br>';
           echo $e->getMessage();
         }
+        echo '</div>';
         ?>
         <p><a href="<?php echo $backURL ?>">戻る</a></p>
       </section>
