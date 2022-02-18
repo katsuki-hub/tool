@@ -132,7 +132,10 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
               echo "<td>", es($row['speed']), "</td>";
               echo "<td>", es($row['total']), "</td>";
               echo "</tr>";
-              echo "</table><br><HR>";
+              echo "</table>";
+              echo '<div class="prof">';
+              echo es($row['profile']);
+              echo '</div><br><HR>';
             }
           } else {
             echo "{$name}ポケモンは見つかりませんでした。";
