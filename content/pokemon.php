@@ -65,14 +65,22 @@
           </form><br>
           <hr>
 
-          <p>※後日実装します。現在未対応</p>
-          <form method="POST" action="">
+          <p>※ガラル・ヒスイとアローラの一部は後日実装します。現在未対応</p>
+          <form method="POST" action="local.php">
             <ul>
               <li>
                 <span>地方で検索：</span><br>
-                <select name="tihou">
+                <select name="local">
                   <option value="カントー">カントー</option>
                   <option value="ジョウト">ジョウト</option>
+                  <option value="ホウエン">ホウエン</option>
+                  <option value="シンオウ">シンオウ</option>
+                  <option value="イッシュ">イッシュ</option>
+                  <option value="カロス">カロス</option>
+                  <option value="アローラ">アローラ</option>
+                  <option value="ガラル">ガラル</option>
+                  <option value="ヒスイ">ヒスイ</option>
+                  <option value="未確認">未確認</option>
                 </select>
               </li>
               <li><input type="submit" value="検索する"></li>

@@ -10,7 +10,7 @@ if (!checkEn($_POST)) { //エンコードチェック
 if (empty($_POST)) { //空の時エラー
   header("Location:{$backURL}");
   exit();
-} else if (!isset($_POST["type"]) || ($_POST["type"] === "")) {
+} else if (!isset($_POST["local"]) || ($_POST["local"] === "")) {
   header("Location:{$backURL}");
   exit();
 }
@@ -72,7 +72,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
 
 <body>
   <header>
-    <?php $headerTitle = "ポケモン図鑑 タイプ別" ?>
+    <?php $headerTitle = "ポケモン図鑑 地方別" ?>
     <?php require_once "../common/header.php"; ?>
   </header>
   <div class="wall">
@@ -80,18 +80,18 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
       <section>
         <h2>ポケモンデータ</h2>
         <?php
-        $type = $_POST["type"];
+        $local = $_POST["local"];
         try {
           $pdo = new PDO($dsn, $user, $passwoed);
           $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
           $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-          $sql = "SELECT*FROM `pokemon-data` WHERE types1 LIKE(:type) OR types2 LIKE'%$type%'";
+          $sql = "SELECT*FROM `pokemon-data` WHERE `local` LIKE(:local)";
           $stm = $pdo->prepare($sql); //プリペアドステートメント作成
-          $stm->bindValue(':type', "%{$type}%", PDO::PARAM_STR);
+          $stm->bindValue(':local', "%{$local}%", PDO::PARAM_STR);
           $stm->execute(); //SQL文の実行
           $result = $stm->fetchAll(PDO::FETCH_ASSOC);
           if (count($result) > 0) {
-            echo "{$type}タイプのポケモン一覧", "\n", "<br><br>", PHP_EOL;
+            echo "{$local}地方のポケモン一覧", "\n", "<br><br>", PHP_EOL;
             echo '<div class="pokeculum">';
             foreach ($result as $row) {
               echo '<div class="culum2">';
@@ -152,7 +152,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
               echo '</div>';
             }
           } else {
-            echo "{$type}ポケモンは見つかりませんでした。";
+            echo "{$local}ポケモンは見つかりませんでした。";
           }
         } catch (Exception $e) {
           echo '<span class="error">エラーがありました</span><br>';
