@@ -19,7 +19,7 @@
           <form method="POST" action="updateProfile.php">
             <ul>
               <li><label>ＮＯ：
-                  <input type="number" name="no" placeholder="番号">
+                  <input type="number" step="0.1" name="no" placeholder="番号">
                 </label></li><br>
               <li>
                 <textarea name="profile" cols="35" rows="8" maxlength="100" placeholder="プロフィール入力"></textarea>
