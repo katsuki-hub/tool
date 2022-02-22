@@ -19,7 +19,7 @@
           <form method="POST" action="updatePoke.php">
             <ul>
               <li><label>ＮＯ：
-                  <input type="number" name="no" placeholder="番号">
+                  <input type="number" step="0.1" name="no" placeholder="番号">
                 </label></li>
               <li><label>分類：
                   <input type="text" name="Classification" placeholder="分類">
