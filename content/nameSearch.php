@@ -91,7 +91,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
           $stm->execute(); //SQL文の実行
           $result = $stm->fetchAll(PDO::FETCH_ASSOC);
           if (count($result) > 0) {
-            echo "{$name}タイプのポケモン一覧", "\n", "<br><br>", PHP_EOL;
+            echo "{$name}の検索結果", "\n", "<br><br>", PHP_EOL;
             foreach ($result as $row) {
               echo '<div class="pokename">';
               echo "No：", es($row['no']), "\n", "<br>", PHP_EOL;
