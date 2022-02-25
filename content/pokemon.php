@@ -32,7 +32,8 @@
               </li>
               <li><input type="submit" value="検索する"></li>
             </ul>
-          </form><br>
+          </form>
+          <br>
           <hr>
 
           <form method="POST" action="pokeSearch.php">
@@ -62,10 +63,10 @@
               </li>
               <li><input type="submit" value="検索する"></li>
             </ul>
-          </form><br>
+          </form>
+          <br>
           <hr>
 
-          <p>※ガラル・ヒスイとアローラの一部は後日実装します。現在未対応</p>
           <form method="POST" action="local.php">
             <ul>
               <li>
@@ -85,10 +86,12 @@
               </li>
               <li><input type="submit" value="検索する"></li>
             </ul>
-          </form><br>
+          </form>
+          <p>※ガラル地方の一部は後日実装します</p>
+          <br>
           <hr>
-          <div class="br30"></div>
 
+          <div class="br30"></div>
           <form action="pokeAll.php" style="text-align: center;" class="all">
             <input type="submit" value="全ポケモン表示">
           </form><br>
