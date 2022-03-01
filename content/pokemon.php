@@ -87,7 +87,6 @@
               <li><input type="submit" value="検索する"></li>
             </ul>
           </form>
-          <p>※ガラル地方の一部は後日実装します</p>
           <br>
           <hr>
 
