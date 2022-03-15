@@ -100,7 +100,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
             $stm->execute();
             $result = $stm->fetchAll(PDO::FETCH_ASSOC);
 
-            echo "<table border=1>";
+            echo '<table border=1 class="hidden">';
             echo "<tr>";
             echo "<th>", "登録番号", "</th>";
             echo "<th>", "選手名", "</th>";
@@ -118,6 +118,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
               echo "<td>", es($row['remarks']), "</td>";
               echo "</tr>";
             }
+            echo "</table>";
           } catch (Exception $e) {
             echo '<span class="error">エラーがあります</span><br>';
             echo $e->getMessage();
@@ -134,6 +135,13 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
   </div><!-- /wall -->
   <?php require_once "../common/footer.php"; ?>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function() {
+      $(".submenu h4").on("click", function() {
+        $(this).next().toggleClass("hidden");
+      });
+    });
+  </script>
 </body>
 
 </html>
