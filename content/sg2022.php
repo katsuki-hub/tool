@@ -98,7 +98,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
         <h2>出場選手</h2>
         <p>※下記の☆レースをクリックすると出場選手が表示されます！</p>
         <div class="submenu">
-          <h4>☆ボートレースクラシック出場メンバー</h4>
+          <h4>☆第５７回ボートレースクラシック出場メンバー</h4>
           <?php
           try {
             $pdo = new PDO($dsn, $user, $passwoed);
@@ -119,6 +119,42 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
             echo "</tr>";
 
             foreach ($result as $row) {
+              echo "<tr>";
+              echo "<td>", es($row['number']), "</td>";
+              echo "<td>", es($row['name']), "</td>";
+              echo "<td>", es($row['reg']), "</td>";
+              echo "<td>", es($row['branch']), "</td>";
+              echo "<td>", es($row['remarks']), "</td>";
+              echo "</tr>";
+            }
+            echo "</table>";
+          } catch (Exception $e) {
+            echo '<span class="error">エラーがあります</span><br>';
+            echo $e->getMessage();
+            exit();
+          }
+          ?>
+        </div>
+
+        <div class="submenu">
+          <h4>☆第４９回ボートレースオールスター出場メンバー</h4>
+          <?php
+          try {
+            $sql2 = "SELECT * FROM allstar2022";
+            $stm2 = $pdo->prepare($sql2);
+            $stm2->execute();
+            $result2 = $stm2->fetchAll(PDO::FETCH_ASSOC);
+
+            echo '<table border=1 class="hidden">';
+            echo "<tr>";
+            echo "<th>", "登録番号", "</th>";
+            echo "<th>", "選手名", "</th>";
+            echo "<th>", "登録期", "</th>";
+            echo "<th>", "支部", "</th>";
+            echo "<th>", "備考", "</th>";
+            echo "</tr>";
+
+            foreach ($result2 as $row) {
               echo "<tr>";
               echo "<td>", es($row['number']), "</td>";
               echo "<td>", es($row['name']), "</td>";
