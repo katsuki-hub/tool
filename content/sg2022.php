@@ -35,6 +35,10 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
       background: #e5f0dd;
     }
 
+    .rem {
+      font-size: 11px;
+    }
+
     h4 {
       font-weight: bold;
       font-style: italic;
@@ -143,7 +147,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
               echo "<td>", es($row['name']), "</td>";
               echo "<td>", es($row['reg']), "</td>";
               echo "<td>", es($row['branch']), "</td>";
-              echo "<td>", es($row['remarks']), "</td>";
+              echo '<td class="rem">', es($row['remarks']), "</td>";
               echo "</tr>";
             }
             echo "</table>";
