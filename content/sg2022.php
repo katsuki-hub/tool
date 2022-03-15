@@ -28,7 +28,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
       background: yellow;
     }
     .submenu td {
-      background: #f5cccc;
+      background: #f0dddd;
     }
   </style>
 </head>
