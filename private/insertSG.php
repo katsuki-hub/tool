@@ -21,6 +21,9 @@ if (!isset($_POST['reg']) || (!ctype_digit($_POST["reg"]))) {
 if (!isset($_POST['branch']) || ($_POST['branch'] === "")) {
   $errors[] = "所属支部が空です";
 }
+if (!isset($_POST['remarks']) || (!ctype_digit($_POST["remarks"]))) {
+  $errors[] = "得票数には数値を入れてください";
+}
 
 //エラーがあったとき
 if (count($errors) > 0) {
@@ -63,18 +66,20 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
         $name = $_POST["name"];
         $reg = $_POST["reg"];
         $branch = $_POST["branch"];
+        $remarks = $_POST["remarks"];
 
         try {
           $pdo = new PDO($dsn, $user, $passwoed);
           $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
           $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-          $sql = "INSERT INTO allstar2022 (number, name, reg, branch) VALUES (:number, :name, :reg, :branch)";
+          $sql = "INSERT INTO allstar2022 (number, name, reg, branch,remarks) VALUES (:number, :name, :reg, :branch ,;remarks)";
           $stm = $pdo->prepare($sql);
           $stm->bindValue(':number', $number, PDO::PARAM_INT);
           $stm->bindValue(':name', $name, PDO::PARAM_STR);
           $stm->bindValue(':reg', $reg, PDO::PARAM_INT);
           $stm->bindValue(':branch', $branch, PDO::PARAM_STR);
+          $stm->bindValue(':remarks', $remarks, PDO::PARAM_STR);
 
           if ($stm->execute()) {
             //レコードの表示
@@ -98,7 +103,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
               echo "<td>", es($row['name']), "</td>";
               echo "<td>", es($row['reg']), "</td>";
               echo "<td>", es($row['branch']), "</td>";
-              echo "<td>", es($row['remarks']), "</td>";
+              echo "<td>", number_format(es($row['remarks'])), "</td>";
               echo "</tr>";
             }
             echo "</table>";
