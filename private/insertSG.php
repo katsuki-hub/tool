@@ -73,7 +73,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
           $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
           $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-          $sql = "INSERT INTO allstar2022 (number, name, reg, branch, remarks) VALUES (:number, :name, :reg, :branch, ;remarks)";
+          $sql = "INSERT INTO allstar2022 (number, name, reg, branch, remarks) VALUES (:number, :name, :reg, :branch, :remarks)";
           $stm = $pdo->prepare($sql);
           $stm->bindValue(':number', $number, PDO::PARAM_INT);
           $stm->bindValue(':name', $name, PDO::PARAM_STR);
