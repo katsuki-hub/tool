@@ -32,7 +32,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
     }
 
     .submenu td {
-      background: #f0dddd;
+      background: #e5f0dd;
     }
 
     h4 {
