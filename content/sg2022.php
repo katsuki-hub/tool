@@ -18,17 +18,27 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
     .hidden {
       display: none;
     }
+
     table {
       font-size: 13px;
     }
+
     .red {
       color: red;
     }
+
     .submenu th {
       background: yellow;
     }
+
     .submenu td {
       background: #f0dddd;
+    }
+
+    h4 {
+      font-weight: bold;
+      font-style: italic;
+      color: #4d4444;
     }
   </style>
 </head>
@@ -105,7 +115,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
           </tr>
         </table>
         <h2>出場選手</h2>
-        <p class="red">※下記の☆レースをクリックすると出場選手が表示されます！</p>
+        <small class="red">※下記の☆レースをクリックすると出場選手が表示されます！</small>
         <div class="submenu">
           <h4>☆第５７回ボートレースクラシック出場メンバー</h4>
           <?php
