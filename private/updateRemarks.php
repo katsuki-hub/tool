@@ -61,7 +61,6 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
           $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
           $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
           $sql = "UPDATE `classic2022` SET `remarks` = '$remarks' WHERE CONCAT(`classic2022`.`number`) = $number";
-
           $stm = $pdo->prepare($sql);
           $stm->execute(); //sql文の実行！！！！
           echo "入力完了です！";

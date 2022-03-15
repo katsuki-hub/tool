@@ -68,41 +68,16 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
           $pdo = new PDO($dsn, $user, $passwoed);
           $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
           $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
           $sql = "INSERT INTO classic2022 (number, name, reg, branch) VALUES (:number, :name, :reg, :branch)";
           $stm = $pdo->prepare($sql);
           $stm->bindValue(':number', $number, PDO::PARAM_INT);
           $stm->bindValue(':name', $name, PDO::PARAM_STR);
           $stm->bindValue(':reg', $reg, PDO::PARAM_INT);
           $stm->bindValue(':branch', $branch, PDO::PARAM_STR);
-
-          if ($stm->execute()) {
-            //レコードの表示
-            $sql = "SELECT * FROM classic2022"; //SQL文を作る
-            $stm = $pdo->prepare($sql); //プリペアドステートメントを作る
-            $stm->execute(); //SQL文を実行
-            $result = $stm->fetchAll(PDO::FETCH_ASSOC); //結果の取得(連想配列で受け取る)
-
-            echo "<table border=1>";
-            echo "<tr>";
-            echo "<th>", "登録番号", "</th>";
-            echo "<th>", "選手名", "</th>";
-            echo "<th>", "登録期", "</th>";
-            echo "<th>", "支部", "</th>";
-            echo "</tr>";
-
-            foreach ($result as $row) {
-              echo "<tr>";
-              echo "<td>", es($row['number']), "</td>";
-              echo "<td>", es($row['name']), "</td>";
-              echo "<td>", es($row['reg']), "</td>";
-              echo "<td>", es($row['branch']), "</td>";
-              echo "</tr>";
-            }
-            echo "</table>";
-          } else {
-            echo '<span class="error">追加エラーがありました</span><br>';
-          };
+          $sql = "SELECT * FROM classic2022"; //SQL文を作る
+          $stm = $pdo->prepare($sql); //プリペアドステートメントを作る
+          $stm->execute(); //SQL文を実行
+          echo "入力完了です！";
         } catch (Exception $e) {
           echo '<span class="error">エラーがありました</span><br>';
           echo $e->getMessage();
@@ -110,7 +85,6 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
         ?>
         <HR>
         <p><a href="<?php echo $backURL ?>">戻る</a></p>
-
       </section>
     </div><!-- /main-wrapper -->
   </div><!-- /wall -->
