@@ -18,6 +18,9 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
     .hidden {
       display: none;
     }
+    table {
+      font-size: 13px;
+    }
   </style>
 </head>
 
@@ -92,10 +95,10 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
             <td></td>
           </tr>
         </table>
-
+        <h2>出場選手</h2>
+        <p>※下記の☆レースをクリックすると出場選手が表示されます！</p>
         <div class="submenu">
           <h4>☆ボートレースクラシック出場メンバー</h4>
-
           <?php
           try {
             $pdo = new PDO($dsn, $user, $passwoed);
