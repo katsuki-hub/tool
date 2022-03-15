@@ -89,6 +89,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
             echo "<th>", "選手名", "</th>";
             echo "<th>", "登録期", "</th>";
             echo "<th>", "支部", "</th>";
+            echo "<th>", "得票数", "</th>";
             echo "</tr>";
 
             foreach ($result as $row) {
@@ -97,6 +98,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
               echo "<td>", es($row['name']), "</td>";
               echo "<td>", es($row['reg']), "</td>";
               echo "<td>", es($row['branch']), "</td>";
+              echo "<td>", es($row['remarks']), "</td>";
               echo "</tr>";
             }
             echo "</table>";

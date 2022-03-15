@@ -30,6 +30,9 @@
               <li><label>　　支部：
                   <input type="text" name="branch" placeholder="所属支部">
                 </label></li>
+                <li><label>　得票数：
+                  <input type="number" name="remarks" placeholder="得票数">
+                </label></li>
               <li><input type="submit" value="追加する"></li>
             </ul>
           </form>
