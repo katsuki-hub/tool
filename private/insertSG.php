@@ -1,6 +1,6 @@
 <?php
 require_once("../common/es.php");
-$backURL = "classicForm.php";
+$backURL = "allstar.php";
 
 if (!checkEn($_POST)) { //エンコードチェック
   header("Location:{$backURL}");
@@ -46,13 +46,13 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
 <html lang="ja" prefix="og:http://ogp.me/ns#">
 
 <head>
-  <?php $title = "新規レコードclassic2022" ?>
+  <?php $title = "新規レコードSG" ?>
   <?php require_once "../common/head.php"; ?>
 </head>
 
 <body>
   <header>
-    <?php $headerTitle = "新規レコードclassic2022" ?>
+    <?php $headerTitle = "新規レコードSG" ?>
     <?php require_once "../common/header.php"; ?>
   </header>
   <div class="wall">
@@ -78,7 +78,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
 
           if ($stm->execute()) {
             //レコードの表示
-            $sql = "SELECT * FROM classic2022"; //SQL文を作る
+            $sql = "SELECT * FROM allstar2022"; //SQL文を作る
             $stm = $pdo->prepare($sql); //プリペアドステートメントを作る
             $stm->execute(); //SQL文を実行
             $result = $stm->fetchAll(PDO::FETCH_ASSOC); //結果の取得(連想配列で受け取る)

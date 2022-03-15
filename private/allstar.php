@@ -2,21 +2,21 @@
 <html lang="ja" prefix="og:http://ogp.me/ns#">
 
 <head>
-  <?php $title = "新規レコードclassic2022" ?>
+  <?php $title = "新規レコードSG" ?>
   <?php require_once "../common/head.php"; ?>
 </head>
 
 <body>
   <header>
-    <?php $headerTitle = "新規レコードclassic2022" ?>
+    <?php $headerTitle = "ボートレースオールスター" ?>
     <?php require_once "../common/header.php"; ?>
   </header>
   <div class="wall">
     <div class="main-wrapper">
       <article>
         <section>
-          <h2>classic2022 Data Add</h2>
-          <form method="POST" action="insertData.php">
+          <h2>オールスター Data Add</h2>
+          <form method="POST" action="insertSG.php">
             <ul>
               <li><label>登録番号：
                   <input type="number" name="number" placeholder="登録番号">
