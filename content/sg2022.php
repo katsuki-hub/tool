@@ -14,6 +14,11 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
 <head>
   <?php $title = "2022年SGスケジュール" ?>
   <?php require_once "../common/head.php"; ?>
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
 </head>
 
 <body>
@@ -90,6 +95,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
 
         <div class="submenu">
           <h4>☆ボートレースクラシック出場メンバー</h4>
+
           <?php
           try {
             $pdo = new PDO($dsn, $user, $passwoed);
