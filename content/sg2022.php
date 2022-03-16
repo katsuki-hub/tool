@@ -20,7 +20,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
     }
 
     table {
-      font-size: 13px;
+      font-size: 14px;
     }
 
     .red {
@@ -33,11 +33,10 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
 
     .submenu td {
       background: #e5f0dd;
-      font-size: 15px;
     }
 
     .rem {
-      font-size: 11px !important;
+      font-size: 11px;
     }
 
     h4 {
