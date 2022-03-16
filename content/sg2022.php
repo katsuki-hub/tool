@@ -21,6 +21,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
 
     table {
       font-size: 13px;
+      width: 100%;
     }
 
     .red {
