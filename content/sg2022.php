@@ -37,7 +37,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
     }
 
     .rem {
-      font-size: 11px;
+      font-size: 11px !important;
     }
 
     h4 {
