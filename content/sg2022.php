@@ -45,6 +45,40 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
       font-style: italic;
       color: #4d4444;
     }
+
+    .n1 {
+      background: #ffffff;
+    }
+
+    .n2 {
+      background: #000000;
+      color: #ffffff;
+    }
+
+    .n3 {
+      background: #ff0000;
+      color: #ffffff;
+    }
+
+    .n4 {
+      background: #0000ff;
+      color: #ffffff;
+    }
+
+    .n5 {
+      background: #ffff00;
+    }
+
+    .n6 {
+      background: #00ff00;
+    }
+
+    .submenu button {
+      font-size: 15px;
+      font-weight: bold;
+      margin: 25px auto;
+      display: block;
+    }
   </style>
 </head>
 
@@ -68,7 +102,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
             <td>3/16~3/21</td>
             <td>ボートレースクラシック（総理大臣杯）</td>
             <td>大村</td>
-            <td></td>
+            <td>遠藤エミ</td>
           </tr>
           <tr>
             <td>5/24~5/29</td>
@@ -119,10 +153,10 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
             <td></td>
           </tr>
         </table>
-        <h2>出場選手</h2>
+        <h2>出場選手＆優勝戦結果</h2>
         <small class="red">※下記の☆レースをクリックすると出場選手が表示されます！</small>
         <div class="submenu">
-          <h4>☆第５７回ボートレースクラシック出場メンバー</h4>
+          <button>☆第５７回ボートレースクラシック出場メンバー</button>
           <?php
           try {
             $pdo = new PDO($dsn, $user, $passwoed);
@@ -159,9 +193,108 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
           }
           ?>
         </div>
+        <h3>ボートレースクラシック優勝戦結果</h3>
+        <figure>
+          <table border="3">
+            <tbody>
+              <tr>
+                <th>着</th>
+                <th>枠</th>
+                <th>選手名</th>
+                <th>レースタイム</th>
+                <th>ST</th>
+              </tr>
+              <tr>
+                <td>１</td>
+                <td class="n1">１</td>
+                <td>遠藤 エミ</td>
+                <td>1'46"7</td>
+                <td>.07</td>
+              </tr>
+              <tr>
+                <td>２</td>
+                <td class="n4">４</td>
+                <td>上條 暢嵩</td>
+                <td>1'48"4</td>
+                <td>.07</td>
+              </tr>
+              <tr>
+                <td>３</td>
+                <td class="n5">５</td>
+                <td>中島 孝平</td>
+                <td>1'49"8</td>
+                <td>.07</td>
+              </tr>
+              <tr>
+                <td>４</td>
+                <td class="n2">２</td>
+                <td>秦 英悟</td>
+                <td>1'50"9</td>
+                <td>.05</td>
+              </tr>
+              <tr>
+                <td>５</td>
+                <td class="n3">３</td>
+                <td>毒島 誠</td>
+                <td>1'51"2</td>
+                <td>.06</td>
+              </tr>
+              <tr>
+                <td>６</td>
+                <td class="n6">６</td>
+                <td>前田 将太</td>
+                <td>1'52"0</td>
+                <td>.07</td>
+              </tr>
+            </tbody>
+          </table>
+          <figcaption>優勝戦　12Ｒ　決まり手：逃げ</figcaption>
+        </figure>
 
+        <figure>
+          <table border="3">
+            <tbody>
+              <tr>
+                <th>天候</th>
+                <th>風速</th>
+                <th>波高</th>
+                <th>スタート</th>
+              </tr>
+              <tr>
+                <td>雨</td>
+                <td>1m</td>
+                <td>1cm</td>
+                <td>向い風</td>
+              </tr>
+            </tbody>
+          </table>
+        </figure>
+
+        <figure>
+          <table border="3">
+            <tbody>
+              <tr>
+                <th>2連単</th>
+                <td class="n1">１</td>
+                <td>ー</td>
+                <td class="n4">４</td>
+                <td>710円</td>
+                <td class="red">3</td>
+              </tr>
+              <tr>
+                <th>3連単</th>
+                <td class="n1">１</td>
+                <td class="n4">４</td>
+                <td class="n5">５</td>
+                <td>2,920円</td>
+                <td class="red">10</td>
+              </tr>
+            </tbody>
+          </table>
+        </figure>
+        <div class="br50"></div>
         <div class="submenu">
-          <h4>☆第４９回ボートレースオールスター出場メンバー</h4>
+          <button>☆第４９回ボートレースオールスター出場メンバー</button>
           <?php
           try {
             $sql2 = "SELECT * FROM allstar2022";
@@ -195,9 +328,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
           }
           ?>
         </div>
-
-
-
+        <h3>ボートレースオールスター優勝戦結果</h3>
 
       </section>
     </div><!-- /main-wrapper -->
@@ -206,7 +337,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script>
     $(document).ready(function() {
-      $(".submenu h4").on("click", function() {
+      $(".submenu button").on("click", function() {
         $(this).next().toggleClass("hidden");
       });
     });
