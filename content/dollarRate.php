@@ -58,13 +58,13 @@
           ?>
 
           <?php
-          $url = "http://fx.mybluemix.net/"; //公開されているjsonデータのURL
+          $url = "https://www.gaitameonline.com/rateaj/getrate"; //公開されているjsonデータのURL
           $json = mb_convert_encoding(file_get_contents($url), 'UTF8', 'ASCII,JIS,UTF-8,EUC-JP,SJIS-WIN');
           $arr = json_decode($json, true);
           if ($arr === NULL) {
             echo "データがありません";
           } else {
-            $dollRate = $arr['result']['rate']['USDJPY'];
+            $dollRate = $arr['quotes'][20]['bid'];
           }
           echo "<b>", "※現在の米ドル/円：", $dollRate, "円です。", "</b><HR>";
           ?>
