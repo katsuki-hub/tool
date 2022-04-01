@@ -10,7 +10,7 @@
         <li><a href="https://tool.katsumaru.blog">Top</a></li>
         <li><a href="https://tool.katsumaru.blog/content/covid.php">COVID 県別累積</a></li>
         <li><a href="https://tool.katsumaru.blog/content/worldCovid.php">COVID World</a></li>
-        <li><a href="https://tool.katsumaru.blog/content/covidDay.php">COVID 福岡</a></li>
+        <li><a href="https://tool.katsumaru.blog/content/covid2022.php">COVID 福岡</a></li>
         <li><a href="https://tool.katsumaru.blog/content/rate.php">債権係数</a></li>
         <li><a href="https://tool.katsumaru.blog/content/dollarRate.php">円ドル変換</a></li>
         <li><a href="https://tool.katsumaru.blog/content/interest.php">利息計算</a></li>
