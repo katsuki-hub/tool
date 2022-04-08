@@ -72,11 +72,11 @@
     var myChart = new Chart(ctx, {
       type: 'bar',
       data: {
-        labels: ["12月", "2022年1月", "2月"],
+        labels: ["2022年1月", "2月", "3月"],
         datasets: [{
             type: 'bar',
             label: "全国感染者",
-            data: [5807, 1062025, 2132756],
+            data: [1069985, 2071148, 1456066],
             backgroundColor: "rgba(255, 99, 132, 0.2)",
             borderColor: 'rgb(255, 99, 132)',
             borderWidth: 1,
@@ -85,7 +85,7 @@
           {
             type: 'line', //折れ線グラフ
             label: "福岡県",
-            data: [182, 46105, 86649],
+            data: [47122, 78965, 54234],
             backgroundColor: "rgba(54,162,235,0.2)",
             borderColor: "rgb(54,162,235)",
             borderWidth: 1.2,
