@@ -65,50 +65,52 @@
     </div><!-- /main-wrapper -->
   </div><!-- /wall -->
   <?php require_once "../common/footer.php"; ?>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js" integrity="sha512-TW5s0IT/IppJtu76UbysrBH9Hy/5X41OTAbQuffZFU6lQ1rdcLHzpU5BzVvr/YFykoiMYZVWlr/PX1mDcfM9Qg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"
+    integrity="sha512-TW5s0IT/IppJtu76UbysrBH9Hy/5X41OTAbQuffZFU6lQ1rdcLHzpU5BzVvr/YFykoiMYZVWlr/PX1mDcfM9Qg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="../script/location.js"></script>
   <script>
-    var ctx = document.getElementById('myChart').getContext('2d');
-    var myChart = new Chart(ctx, {
-      type: 'bar',
-      data: {
-        labels: ["2022年1月", "2月", "3月"],
-        datasets: [{
-            type: 'bar',
-            label: "全国感染者",
-            data: [1069985, 2071148, 1456066],
-            backgroundColor: "rgba(255, 99, 132, 0.2)",
-            borderColor: 'rgb(255, 99, 132)',
-            borderWidth: 1,
-            yAxisID: "y1"
-          },
-          {
-            type: 'line', //折れ線グラフ
-            label: "福岡県",
-            data: [47122, 78965, 54234],
-            backgroundColor: "rgba(54,162,235,0.2)",
-            borderColor: "rgb(54,162,235)",
-            borderWidth: 1.2,
-            pointBackgroundColor: "rgba(54,162,235,0.2)",
-            radius: 4,
-            pointHoverBackgroundColor: "rgba(54,162,235,0.2)",
-            pointHoverRadius: 6,
-            pointHoverBorderColor: "rgb(54,162,235)",
-            pointHoverBorderWidth: 2, //ホバー時の先の太さ
-            lineTension: 0, //ベジェ曲線の張力（0＝直線）
-            fill: false, //線下を塗りつぶすかどうか
-            yAxisID: "y2" //軸のID（複数軸存在する場合）
-          }
-        ],
-      },
-      options: {
-        scales: {
-          "y2": {
-            display: false
-          }
+  var ctx = document.getElementById('myChart').getContext('2d');
+  var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ["2022年1月", "2月", "3月", "4月"],
+      datasets: [{
+          type: 'bar',
+          label: "全国感染者",
+          data: [1069985, 2071148, 1456066, 1246023],
+          backgroundColor: "rgba(255, 99, 132, 0.2)",
+          borderColor: 'rgb(255, 99, 132)',
+          borderWidth: 1,
+          yAxisID: "y1"
+        },
+        {
+          type: 'line', //折れ線グラフ
+          label: "福岡県",
+          data: [47122, 78965, 54234, 58334],
+          backgroundColor: "rgba(54,162,235,0.2)",
+          borderColor: "rgb(54,162,235)",
+          borderWidth: 1.2,
+          pointBackgroundColor: "rgba(54,162,235,0.2)",
+          radius: 4,
+          pointHoverBackgroundColor: "rgba(54,162,235,0.2)",
+          pointHoverRadius: 6,
+          pointHoverBorderColor: "rgb(54,162,235)",
+          pointHoverBorderWidth: 2, //ホバー時の先の太さ
+          lineTension: 0, //ベジェ曲線の張力（0＝直線）
+          fill: false, //線下を塗りつぶすかどうか
+          yAxisID: "y2" //軸のID（複数軸存在する場合）
+        }
+      ],
+    },
+    options: {
+      scales: {
+        "y2": {
+          display: false
         }
       }
-    });
+    }
+  });
   </script>
 </body>
 
