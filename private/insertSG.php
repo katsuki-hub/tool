@@ -21,9 +21,6 @@ if (!isset($_POST['reg']) || (!ctype_digit($_POST["reg"]))) {
 if (!isset($_POST['branch']) || ($_POST['branch'] === "")) {
   $errors[] = "所属支部が空です";
 }
-if (!isset($_POST['remarks']) || (!ctype_digit($_POST["remarks"]))) {
-  $errors[] = "得票数には数値を入れてください";
-}
 
 //エラーがあったとき
 if (count($errors) > 0) {
@@ -73,7 +70,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
           $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
           $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-          $sql = "INSERT INTO allstar2022 (number, name, reg, branch, remarks) VALUES (:number, :name, :reg, :branch, :remarks)";
+          $sql = "INSERT INTO grandchampion2022 (number, name, reg, branch, remarks) VALUES (:number, :name, :reg, :branch, :remarks)";
           $stm = $pdo->prepare($sql);
           $stm->bindValue(':number', $number, PDO::PARAM_INT);
           $stm->bindValue(':name', $name, PDO::PARAM_STR);
@@ -83,7 +80,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
 
           if ($stm->execute()) {
             //レコードの表示
-            $sql = "SELECT * FROM allstar2022"; //SQL文を作る
+            $sql = "SELECT * FROM grandchampion2022"; //SQL文を作る
             $stm = $pdo->prepare($sql); //プリペアドステートメントを作る
             $stm->execute(); //SQL文を実行
             $result = $stm->fetchAll(PDO::FETCH_ASSOC); //結果の取得(連想配列で受け取る)
@@ -94,7 +91,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
             echo "<th>", "選手名", "</th>";
             echo "<th>", "登録期", "</th>";
             echo "<th>", "支部", "</th>";
-            echo "<th>", "得票数", "</th>";
+            echo "<th>", "備考", "</th>";
             echo "</tr>";
 
             foreach ($result as $row) {
@@ -103,7 +100,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
               echo "<td>", es($row['name']), "</td>";
               echo "<td>", es($row['reg']), "</td>";
               echo "<td>", es($row['branch']), "</td>";
-              echo "<td>", number_format(es($row['remarks'])), "</td>";
+              echo "<td>", es($row['remarks']), "</td>";
               echo "</tr>";
             }
             echo "</table>";
@@ -122,7 +119,8 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
     </div><!-- /main-wrapper -->
   </div><!-- /wall -->
   <?php require_once "../common/footer.php"; ?>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </body>
 
 </html>
