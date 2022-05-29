@@ -15,70 +15,70 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
   <?php $title = "2022年SGスケジュール" ?>
   <?php require_once "../common/head.php"; ?>
   <style>
-  .hidden {
-    display: none;
-  }
+    .hidden {
+      display: none;
+    }
 
-  table {
-    font-size: 13px;
-    width: 100%;
-  }
+    table {
+      font-size: 13px;
+      width: 100%;
+    }
 
-  .red {
-    color: red;
-  }
+    .red {
+      color: red;
+    }
 
-  .submenu th {
-    background: yellow;
-  }
+    .submenu th {
+      background: yellow;
+    }
 
-  .submenu td {
-    background: #e5f0dd;
-  }
+    .submenu td {
+      background: #e5f0dd;
+    }
 
-  .rem {
-    font-size: 11px;
-  }
+    .rem {
+      font-size: 11px;
+    }
 
-  h4 {
-    font-weight: bold;
-    font-style: italic;
-    color: #4d4444;
-  }
+    h4 {
+      font-weight: bold;
+      font-style: italic;
+      color: #4d4444;
+    }
 
-  .n1 {
-    background: #ffffff;
-  }
+    .n1 {
+      background: #ffffff;
+    }
 
-  .n2 {
-    background: #000000;
-    color: #ffffff;
-  }
+    .n2 {
+      background: #000000;
+      color: #ffffff;
+    }
 
-  .n3 {
-    background: #ff0000;
-    color: #ffffff;
-  }
+    .n3 {
+      background: #ff0000;
+      color: #ffffff;
+    }
 
-  .n4 {
-    background: #0000ff;
-    color: #ffffff;
-  }
+    .n4 {
+      background: #0000ff;
+      color: #ffffff;
+    }
 
-  .n5 {
-    background: #ffff00;
-  }
+    .n5 {
+      background: #ffff00;
+    }
 
-  .n6 {
-    background: #00ff00;
-  }
+    .n6 {
+      background: #00ff00;
+    }
 
-  .submenu button {
-    font-size: 15px;
-    font-weight: bold;
-    margin: 25px auto;
-    display: block;
-  }
+    .submenu button {
+      font-size: 15px;
+      font-weight: bold;
+      margin: 25px auto;
+      display: block;
+    }
   </style>
 </head>
 
@@ -108,7 +108,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
             <td>5/24~5/29</td>
             <td>ボートレースオールスター（笹川賞）</td>
             <td>宮島</td>
-            <td></td>
+            <td>原田幸哉</td>
           </tr>
           <tr>
             <td>6/21~6/26</td>
@@ -297,7 +297,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
           <button>☆第４９回ボートレースオールスター出場メンバー</button>
           <?php
           try {
-            $sql2 = "SELECT * FROM allstar2022";
+            $sql2 = "SELECT * FROM allstar2022 order by remarks desc";
             $stm2 = $pdo->prepare($sql2);
             $stm2->execute();
             $result2 = $stm2->fetchAll(PDO::FETCH_ASSOC);
@@ -329,9 +329,106 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
           ?>
         </div>
         <h3>ボートレースオールスター優勝戦結果</h3>
+        <figure>
+          <table border="3">
+            <tbody>
+              <tr>
+                <th>着</th>
+                <th>枠</th>
+                <th>選手名</th>
+                <th>レースタイム</th>
+                <th>ST</th>
+              </tr>
+              <tr>
+                <td>１</td>
+                <td class="n3">３</td>
+                <td>原田 幸哉</td>
+                <td>1'48"4</td>
+                <td>.09</td>
+              </tr>
+              <tr>
+                <td>２</td>
+                <td class="n1">１</td>
+                <td>白井 英治</td>
+                <td>1'50"7</td>
+                <td>.10</td>
+              </tr>
+              <tr>
+                <td>３</td>
+                <td class="n5">５</td>
+                <td>篠崎 元志</td>
+                <td>1'52"2</td>
+                <td>.19</td>
+              </tr>
+              <tr>
+                <td>４</td>
+                <td class="n4">４</td>
+                <td>石野 貴之</td>
+                <td>1'53"2</td>
+                <td>.18</td>
+              </tr>
+              <tr>
+                <td>５</td>
+                <td class="n2">２</td>
+                <td>村松 修二</td>
+                <td>1'53"3</td>
+                <td>.12</td>
+              </tr>
+              <tr>
+                <td>６</td>
+                <td class="n6">６</td>
+                <td>平高 奈菜</td>
+                <td>1'53"5</td>
+                <td>.17</td>
+              </tr>
+            </tbody>
+          </table>
+          <figcaption>優勝戦　12R　決まり手：まくり差し</figcaption>
+        </figure>
 
+        <figure>
+          <table border="3">
+            <tbody>
+              <tr>
+                <th>天候</th>
+                <th>風速</th>
+                <th>波高</th>
+                <th>スタート</th>
+              </tr>
+              <tr>
+                <td>晴れ</td>
+                <td>3m</td>
+                <td>3cm</td>
+                <td>向い風</td>
+              </tr>
+            </tbody>
+          </table>
+        </figure>
 
+        <figure>
+          <table border="3">
+            <tbody>
+              <tr>
+                <th>2連単</th>
+                <td class="n3">３</td>
+                <td>ー</td>
+                <td class="n1">１</td>
+                <td>1,380円</td>
+                <td class="red">5</td>
+              </tr>
+              <tr>
+                <th>3連単</th>
+                <td class="n3">３</td>
+                <td class="n5">５</td>
+                <td class="n1">１</td>
+                <td>5,840円</td>
+                <td class="red">18</td>
+              </tr>
+            </tbody>
+          </table>
+        </figure>
         <div class="br50"></div>
+
         <div class="submenu">
           <button>☆第３２回グランドチャンピオン出場メンバー</button>
           <?php
@@ -373,14 +470,13 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
     </div><!-- /main-wrapper -->
   </div><!-- /wall -->
   <?php require_once "../common/footer.php"; ?>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script>
-  $(document).ready(function() {
-    $(".submenu button").on("click", function() {
-      $(this).next().toggleClass("hidden");
+    $(document).ready(function() {
+      $(".submenu button").on("click", function() {
+        $(this).next().toggleClass("hidden");
+      });
     });
-  });
   </script>
 </body>
 
