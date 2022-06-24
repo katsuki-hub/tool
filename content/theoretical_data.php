@@ -90,26 +90,27 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
           $stm->bindValue(':code', "%{$code}%", PDO::PARAM_STR);
           $stm->execute(); //SQL文の実行
           $result = $stm->fetchAll(PDO::FETCH_ASSOC);
-          echo "<table border=1>";
-          echo "<tr>";
-          echo "<th>", "証券コード", "</th>";
-          echo "<th>", "社名", "</th>";
-          echo "<th>", "業種", "</th>";
-          echo "<th>", "業績予想変化率", "</th>";
-          echo "<th>", "PER", "</th>";
-          echo "<th>", "PBR", "</th>";
-          echo "<th>", "配当利回り", "</th>";
-          echo "<th>", "理論株価", "</th>";
-          echo "<th>", "理論株価修正余地", "</th>";
-          echo "<th>", "業績進捗率", "</th>";
-          echo "<th>", "進捗率四半期決算期", "</th>";
-          echo "<th>", "会社計画営業増益率", "</th>";
-          echo "<th>", "破綻危険度", "</th>";
-          echo "<th>", "株価日付", "</th>";
-          echo "<th>", "株価", "</th>";
-          echo "</tr>";
+
           if (count($result) > 0) {
-            echo "{$code}の検索結果", "\n", "<br><br>", PHP_EOL;
+            echo "『{$code}』の検索結果", "\n", "<br><br>", PHP_EOL;
+            echo "<table border=1>";
+            echo "<tr>";
+            echo "<th>", "証券コード", "</th>";
+            echo "<th>", "社名", "</th>";
+            echo "<th>", "業種", "</th>";
+            echo "<th>", "業績予想変化率", "</th>";
+            echo "<th>", "PER", "</th>";
+            echo "<th>", "PBR", "</th>";
+            echo "<th>", "配当利回り", "</th>";
+            echo "<th>", "理論株価", "</th>";
+            echo "<th>", "理論株価修正余地", "</th>";
+            echo "<th>", "業績進捗率", "</th>";
+            echo "<th>", "進捗率四半期決算期", "</th>";
+            echo "<th>", "会社計画営業増益率", "</th>";
+            echo "<th>", "破綻危険度", "</th>";
+            echo "<th>", "株価日付", "</th>";
+            echo "<th>", "株価", "</th>";
+            echo "</tr>";
             foreach ($result as $row) {
               echo "<tr>";
               echo "<td>", es($row['code']), "</td>";
@@ -131,7 +132,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
             }
             echo "</table>";
           } else {
-            echo "{$code}は見つかりませんでした。";
+            echo "『{$code}』は見つかりませんでした。";
           }
         } catch (Exception $e) { //接続失敗で例外処理実行
           echo '<span class="error">エラーがありました</span><br>';
