@@ -25,12 +25,12 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="manifest" href="manifest.json">
   <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('sw.js')
-        .then((reg) => {
-          console.log('Service worker registered.', reg);
-        });
-    }
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js')
+      .then((reg) => {
+        console.log('Service worker registered.', reg);
+      });
+  }
   </script>
 </head>
 
@@ -56,18 +56,22 @@
           <a href="content/interest.php" class="clm3"><img src="images/risoku.png" alt="利息計算"></a>
           <a href="content/pokemon.php" class="clm3"><img src="images/pokemon.png" alt="ポケモン図鑑"></a>
           <a href="content/sg2022.php" class="clm3"><img src="images/sg2022.png" alt="SG2022"></a>
+          <a href="content/theoretical_stock.php" class="clm3"><img src="images/sg2022.png" alt="SG2022"></a>
         </div><!-- /column -->
       </section>
       <div class="br50"></div>
       <section id="private">
-        <a href="private/administrator.php" class="pv"><h3>管理者用ページへ</h3></a>
+        <a href="private/administrator.php" class="pv">
+          <h3>管理者用ページへ</h3>
+        </a>
       </section>
     </div><!-- /main-wrapper -->
   </div><!-- /wall -->
   <footer>
     <small>&copy; 2021 かつまるツールボックス</small>
   </footer>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="script/command.js"></script>
 </body>
 

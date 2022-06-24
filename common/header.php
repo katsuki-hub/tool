@@ -16,6 +16,7 @@
         <li><a href="https://tool.katsumaru.blog/content/interest.php">利息計算</a></li>
         <li><a href="https://tool.katsumaru.blog/content/pokemon.php">ポケモン図鑑</a></li>
         <li><a href="https://tool.katsumaru.blog/content/sg2022.php">2022年SG開催</a></li>
+        <li><a href="https://tool.katsumaru.blog/content/theoretical_stock.php">理論株価</a></li>
       </ul>
     </div>
   </nav>
