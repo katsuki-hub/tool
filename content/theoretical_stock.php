@@ -17,7 +17,7 @@
         <section>
           <h2>大診断拡張版2022夏号</h2>
           <div class="br30"></div>
-          <form method="POST" action="theoretical_stock.php">
+          <form method="POST" action="theoretical_data.php">
             <ul>
               <li>
                 <label>名前で検索：<br>
@@ -27,8 +27,6 @@
               <li><input type="submit" value="検索する"></li>
             </ul>
           </form>
-
-
         </section>
       </article>
     </div><!-- /main-wrapper -->
