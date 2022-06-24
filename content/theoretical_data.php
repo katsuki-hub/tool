@@ -69,9 +69,9 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
             echo "『{$code}』の検索結果";
             foreach ($result as $row) {
               echo "<table border=1>";
-              echo '<tr class="syamei">';
-              echo "<th>", "証券コード", "</th>";
-              echo "<th>", "社名", "</th>";
+              echo "<tr>";
+              echo '<th class="syamei">', "証券コード", "</th>";
+              echo '<th class="syamei">', "社名", "</th>";
               echo "<th>", "業種", "</th>";
               echo "</tr>";
               echo "<tr>";
