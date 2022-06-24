@@ -20,8 +20,8 @@
           <form method="POST" action="theoretical_data.php">
             <ul>
               <li>
-                <label>名前で検索：<br>
-                  <input type="text" name="code" placeholder="なまえを入力">
+                <label>株価診断<br>
+                  <input type="text" name="code" placeholder="証券コード or 社名">
                 </label>
               </li>
               <li><input type="submit" value="検索する"></li>

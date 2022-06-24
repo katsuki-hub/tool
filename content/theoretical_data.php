@@ -85,7 +85,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
           $pdo = new PDO($dsn, $user, $passwoed);
           $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
           $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-          $sql = "SELECT*FROM `theoretical_stock` WHERE code LIKE(:code) OR name LIKE(:code)";
+          $sql = "SELECT*FROM `theoretical_stock` WHERE `code` OR `name` LIKE(:code)";
           $stm = $pdo->prepare($sql); //プリペアドステートメント作成
           $stm->bindValue(':code', "%{$code}%", PDO::PARAM_STR);
           $stm->execute(); //SQL文の実行
