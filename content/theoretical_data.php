@@ -32,40 +32,15 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
   <style>
   table {
     text-align: center;
-    font-size: 14px;
+    font-size: 13px;
   }
 
-  .pokename {
-    text-align: center;
-    font-weight: bold;
-    font-size: 22px;
-    overflow: hidden;
-    width: 100%;
+  th {
+    background: rgba(215, 227, 157, 0.9);
   }
 
-  .typeStatus {
-    width: 100%;
-  }
-
-  .status {
-    margin-top: -30px;
-    width: 100%;
-  }
-
-  .left img {
-    float: left;
-    width: 50%;
-  }
-
-  .right {
-    float: right;
-    width: 45%;
-    text-align: left;
-    font-size: 15px;
-  }
-
-  .folm {
-    color: rgb(240, 167, 22);
+  .syamei {
+    background-color: rgba(157, 143, 245, 0.6);
   }
   </style>
 </head>
@@ -94,7 +69,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
             echo "『{$code}』の検索結果";
             foreach ($result as $row) {
               echo "<table border=1>";
-              echo "<tr>";
+              echo '<tr class="syamei">';
               echo "<th>", "証券コード", "</th>";
               echo "<th>", "社名", "</th>";
               echo "<th>", "業種", "</th>";
@@ -155,7 +130,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
               echo "<td>", es($row['price']), "</td>";
               echo "</tr>";
 
-              echo "</table>";
+              echo "</table>", "<br>";
             }
           } else {
             echo "『{$code}』は見つかりませんでした。";
