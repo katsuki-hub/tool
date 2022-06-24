@@ -91,45 +91,72 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
           $stm->execute(); //SQL文の実行
           $result = $stm->fetchAll(PDO::FETCH_ASSOC);
           if (count($result) > 0) {
-            echo "『{$code}』の検索結果", "\n", "<br><br>", PHP_EOL;
-            echo "<table border=1>";
-            echo "<tr>";
-            echo "<th>", "証券コード", "</th>";
-            echo "<th>", "社名", "</th>";
-            echo "<th>", "業種", "</th>";
-            echo "<th>", "業績予想変化率", "</th>";
-            echo "<th>", "PER", "</th>";
-            echo "<th>", "PBR", "</th>";
-            echo "<th>", "配当利回り", "</th>";
-            echo "<th>", "理論株価", "</th>";
-            echo "<th>", "理論株価修正余地", "</th>";
-            echo "<th>", "業績進捗率", "</th>";
-            echo "<th>", "進捗率四半期決算期", "</th>";
-            echo "<th>", "会社計画営業増益率", "</th>";
-            echo "<th>", "破綻危険度", "</th>";
-            echo "<th>", "株価日付", "</th>";
-            echo "<th>", "株価", "</th>";
-            echo "</tr>";
+            echo "『{$code}』の検索結果";
             foreach ($result as $row) {
+              echo "<table border=1>";
+              echo "<tr>";
+              echo "<th>", "証券コード", "</th>";
+              echo "<th>", "社名", "</th>";
+              echo "<th>", "業種", "</th>";
+              echo "</tr>";
               echo "<tr>";
               echo "<td>", es($row['code']), "</td>";
               echo "<td>", es($row['name']), "</td>";
               echo "<td>", es($row['industry']), "</td>";
+              echo "</tr>";
+              echo "<tr>";
+              echo "</tr>";
+
+              echo "<tr>";
+              echo "<th>", "業績予想変化率", "</th>";
+              echo "<th>", "PER", "</th>";
+              echo "<th>", "PBR", "</th>";
+              echo "</tr>";
+
+              echo "<tr>";
               echo "<td>", es($row['predict']), "</td>";
               echo "<td>", es($row['per']), "</td>";
               echo "<td>", es($row['pbr']), "</td>";
+              echo "</tr>";
+
+              echo "<tr>";
+              echo "<th>", "配当利回り", "</th>";
+              echo "<th>", "理論株価", "</th>";
+              echo "<th>", "理論株価修正余地", "</th>";
+              echo "</tr>";
+
+              echo "<tr>";
               echo "<td>", es($row['dividend']), "</td>";
               echo "<td>", es($row['theory']), "</td>";
               echo "<td>", es($row['correct']), "</td>";
+              echo "</tr>";
+
+              echo "<tr>";
+              echo "<th>", "業績進捗率", "</th>";
+              echo "<th>", "進捗率四半期決算期", "</th>";
+              echo "<th>", "会社計画営業増益率", "</th>";
+              echo "</tr>";
+
+              echo "<tr>";
               echo "<td>", es($row['performance']), "</td>";
               echo "<td>", es($row['quarter']), "</td>";
               echo "<td>", es($row['increase']), "</td>";
+              echo "</tr>";
+
+              echo "<tr>";
+              echo "<th>", "破綻危険度", "</th>";
+              echo "<th>", "株価日付", "</th>";
+              echo "<th>", "株価", "</th>";
+              echo "</tr>";
+
+              echo "<tr>";
               echo "<td>", es($row['dangerous']), "</td>";
               echo "<td>", es($row['day']), "</td>";
               echo "<td>", es($row['price']), "</td>";
               echo "</tr>";
+
+              echo "</table>";
             }
-            echo "</table>";
           } else {
             echo "『{$code}』は見つかりませんでした。";
           }
