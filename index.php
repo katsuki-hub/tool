@@ -56,7 +56,7 @@
           <a href="content/interest.php" class="clm3"><img src="images/risoku.png" alt="利息計算"></a>
           <a href="content/pokemon.php" class="clm3"><img src="images/pokemon.png" alt="ポケモン図鑑"></a>
           <a href="content/sg2022.php" class="clm3"><img src="images/sg2022.png" alt="SG2022"></a>
-          <a href="content/theoretical_stock.php" class="clm3"><img src="images/sg2022.png" alt="SG2022"></a>
+          <a href="content/theoretical_stock.php" class="clm3"><img src="images/kabu.png" alt="kabu"></a>
         </div><!-- /column -->
       </section>
       <div class="br50"></div>
