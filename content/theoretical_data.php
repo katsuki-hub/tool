@@ -90,9 +90,9 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
               echo "</tr>";
 
               echo "<tr>";
-              echo "<td>", es($row['predict']), "</td>";
-              echo "<td>", es($row['per']), "</td>";
-              echo "<td>", es($row['pbr']), "</td>";
+              echo "<td>", es($row['predict']), "%", "</td>";
+              echo "<td>", es($row['per']), "倍", "</td>";
+              echo "<td>", es($row['pbr']), "倍", "</td>";
               echo "</tr>";
 
               echo "<tr>";
@@ -103,8 +103,8 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
 
               echo "<tr>";
               echo "<td>", es($row['dividend']), "</td>";
-              echo '<td class="theory">', es($row['theory']), "</td>";
-              echo "<td>", es($row['correct']), "</td>";
+              echo '<td class="theory">', es($row['theory']), "円", "</td>";
+              echo "<td>", es($row['correct']), "円", "</td>";
               echo "</tr>";
 
               echo "<tr>";
@@ -116,19 +116,19 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
               echo "<tr>";
               echo "<td>", es($row['performance']), "</td>";
               echo "<td>", es($row['quarter']), "</td>";
-              echo "<td>", es($row['increase']), "</td>";
+              echo "<td>", es($row['increase']), "%", "</td>";
               echo "</tr>";
 
               echo "<tr>";
               echo "<th>", "破綻危険度", "</th>";
               echo "<th>", "株価日付", "</th>";
-              echo "<th>", "株価", "</th>";
+              echo "<th>", "株価",  "</th>";
               echo "</tr>";
 
               echo "<tr>";
               echo "<td>", es($row['dangerous']), "</td>";
               echo "<td>", es($row['day']), "</td>";
-              echo "<td>", es($row['price']), "</td>";
+              echo "<td>", es($row['price']), "円", "</td>";
               echo "</tr>";
 
               echo "</table>", "<br>";
