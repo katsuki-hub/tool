@@ -114,7 +114,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
               echo "</tr>";
 
               echo "<tr>";
-              echo "<td>", es($row['performance']), "</td>";
+              echo "<td>", es($row['performance']), "%", "</td>";
               echo "<td>", es($row['quarter']), "</td>";
               echo "<td>", es($row['increase']), "%", "</td>";
               echo "</tr>";
