@@ -39,8 +39,9 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
     background: rgba(215, 227, 157, 0.9);
   }
 
-  .syamei {
-    background-color: rgba(157, 143, 245, 0.6);
+  .theory {
+    color: rgb(1, 120, 85);
+    font-weight: bold;
   }
   </style>
 </head>
@@ -70,8 +71,8 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
             foreach ($result as $row) {
               echo "<table border=1>";
               echo "<tr>";
-              echo '<th class="syamei">', "証券コード", "</th>";
-              echo '<th class="syamei">', "社名", "</th>";
+              echo "<th>", "証券コード", "</th>";
+              echo "<th>", "社名", "</th>";
               echo "<th>", "業種", "</th>";
               echo "</tr>";
               echo "<tr>";
@@ -102,7 +103,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
 
               echo "<tr>";
               echo "<td>", es($row['dividend']), "</td>";
-              echo "<td>", es($row['theory']), "</td>";
+              echo '<td class="theory">', es($row['theory']), "</td>";
               echo "<td>", es($row['correct']), "</td>";
               echo "</tr>";
 
