@@ -80,7 +80,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
 
           if ($stm->execute()) {
             //レコードの表示
-            $sql = "SELECT * FROM grandchampion2022"; //SQL文を作る
+            $sql = "SELECT * FROM ocean2022"; //SQL文を作る
             $stm = $pdo->prepare($sql); //プリペアドステートメントを作る
             $stm->execute(); //SQL文を実行
             $result = $stm->fetchAll(PDO::FETCH_ASSOC); //結果の取得(連想配列で受け取る)
