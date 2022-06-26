@@ -114,7 +114,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
             <td>6/21~6/26</td>
             <td>グランドチャンピオン（グランドチャンピオン決定戦）</td>
             <td>唐津</td>
-            <td></td>
+            <td>池田浩二</td>
           </tr>
           <tr>
             <td>7/19~7/24</td>
@@ -294,7 +294,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
         </figure>
         <div class="br50"></div>
         <div class="submenu">
-          <button>☆第４９回ボートレースオールスター出場メンバー</button>
+          <button>☆第49回ボートレースオールスター出場メンバー</button>
           <?php
           try {
             $sql2 = "SELECT * FROM allstar2022 order by remarks desc";
@@ -430,7 +430,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
         <div class="br50"></div>
 
         <div class="submenu">
-          <button>☆第３２回グランドチャンピオン出場メンバー</button>
+          <button>☆第32回グランドチャンピオン出場メンバー</button>
           <?php
           try {
             $sql2 = "SELECT * FROM grandchampion2022";
@@ -465,6 +465,108 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
           ?>
         </div>
         <h3>グランドチャンピオン優勝戦結果</h3>
+        <figure class="wp-block-table">
+          <table class="result">
+            <tbody>
+              <tr>
+                <th>着</th>
+                <th>枠</th>
+                <th>選手名</th>
+                <th>レースタイム</th>
+                <th>ST</th>
+              </tr>
+              <tr>
+                <td>１</td>
+                <td class="n1">１</td>
+                <td>池田 浩二</td>
+                <td>1'49"1</td>
+                <td>.15</td>
+              </tr>
+              <tr>
+                <td>２</td>
+                <td class="n2">２</td>
+                <td>上平 真二</td>
+                <td>1'49"8</td>
+                <td>.13</td>
+              </tr>
+              <tr>
+                <td>３</td>
+                <td class="n6">６</td>
+                <td>赤岩 善生</td>
+                <td>1'52"0</td>
+                <td>.16</td>
+              </tr>
+              <tr>
+                <td>４</td>
+                <td class="n5">５</td>
+                <td>柳沢 一</td>
+                <td>1'52"8</td>
+                <td>.17</td>
+              </tr>
+              <tr>
+                <td>５</td>
+                <td class="n4">４</td>
+                <td>中野 次郎</td>
+                <td>1'56"4</td>
+                <td>.14</td>
+              </tr>
+              <tr>
+                <td>６</td>
+                <td class="n3">３</td>
+                <td>山口 剛</td>
+                <td>1'59"8</td>
+                <td>.11</td>
+              </tr>
+            </tbody>
+          </table>
+          <figcaption>優勝戦　12R　決まり手：抜き</figcaption>
+        </figure>
+
+        <figure class="wp-block-table">
+          <table class="result">
+            <tbody>
+              <tr>
+                <th>天候</th>
+                <th>風速</th>
+                <th>波高</th>
+                <th>スタート</th>
+              </tr>
+              <tr>
+                <td>晴れ</td>
+                <td>5m</td>
+                <td>5cm</td>
+                <td>向い風</td>
+              </tr>
+            </tbody>
+          </table>
+        </figure>
+
+        <figure class="wp-block-table">
+          <table class="result">
+            <tbody>
+              <tr>
+                <th>2連単</th>
+                <td class="n1">１</td>
+                <td>ー</td>
+                <td class="n2">２</td>
+                <td>300円</td>
+                <td class="red">1</td>
+              </tr>
+              <tr>
+                <th>3連単</th>
+                <td class="n1">１</td>
+                <td class="n2">２</td>
+                <td class="n6">６</td>
+                <td>1,250円</td>
+                <td class="red">3</td>
+              </tr>
+            </tbody>
+          </table>
+        </figure>
+
+        <div class="submenu">
+          <button>☆第27回オーシャンカップ出場メンバー</button>
+        </div>
 
       </section>
     </div><!-- /main-wrapper -->
