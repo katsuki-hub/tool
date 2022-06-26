@@ -563,10 +563,44 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
             </tbody>
           </table>
         </figure>
+        <div class="br50"></div>
 
         <div class="submenu">
           <button>☆第27回オーシャンカップ出場メンバー</button>
+          <?php
+          try {
+            $sql2 = "SELECT * FROM ocean2022";
+            $stm2 = $pdo->prepare($sql2);
+            $stm2->execute();
+            $result2 = $stm2->fetchAll(PDO::FETCH_ASSOC);
+
+            echo '<table border=1 class="hidden">';
+            echo "<tr>";
+            echo "<th>", "登録番号", "</th>";
+            echo "<th>", "選手名", "</th>";
+            echo "<th>", "登録期", "</th>";
+            echo "<th>", "支部", "</th>";
+            echo "<th>", "備考", "</th>";
+            echo "</tr>";
+
+            foreach ($result2 as $row) {
+              echo "<tr>";
+              echo "<td>", es($row['number']), "</td>";
+              echo "<td>", es($row['name']), "</td>";
+              echo "<td>", es($row['reg']), "</td>";
+              echo "<td>", es($row['branch']), "</td>";
+              echo "<td>", es($row['remarks']), "</td>";
+              echo "</tr>";
+            }
+            echo "</table>";
+          } catch (Exception $e) {
+            echo '<span class="error">エラーがあります</span><br>';
+            echo $e->getMessage();
+            exit();
+          }
+          ?>
         </div>
+        <h3>オーシャンカップ優勝戦結果</h3>
 
       </section>
     </div><!-- /main-wrapper -->

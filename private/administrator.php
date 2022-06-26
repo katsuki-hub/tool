@@ -70,7 +70,7 @@
         <div id="box">
           <ul>
             <li><a href="write.php">covid FUKUOKA Add File</a></li>
-            <li><a href="allstar.php">グラチャン~data~</a></li>
+            <li><a href="allstar.php">オーシャンカップ~data~</a></li>
             <li><a href="classicRemarks.php">classic~備考データ~</a></li>
             <li><a href="pokeForm.php">POKEMON ~Size Data~</a></li>
             <li><a href="pokeProfAdd.php">POKEMON ~Profile Data~</a></li>

@@ -8,14 +8,14 @@
 
 <body>
   <header>
-    <?php $headerTitle = "第32回グランドチャンピオン" ?>
+    <?php $headerTitle = "第27回オーシャンカップ" ?>
     <?php require_once "../common/header.php"; ?>
   </header>
   <div class="wall">
     <div class="main-wrapper">
       <article>
         <section>
-          <h2>第32回グランドチャンピオン Data Add</h2>
+          <h2>第27回オーシャンカップ Data Add</h2>
           <form method="POST" action="insertSG.php">
             <ul>
               <li><label>登録番号：
