@@ -70,7 +70,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
           $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
           $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-          $sql = "INSERT INTO ocean2022 (number, name, reg, branch, remarks) VALUES (:number, :name, :reg, :branch, :remarks)";
+          $sql = "INSERT INTO memorial2022 (number, name, reg, branch, remarks) VALUES (:number, :name, :reg, :branch, :remarks)";
           $stm = $pdo->prepare($sql);
           $stm->bindValue(':number', $number, PDO::PARAM_INT);
           $stm->bindValue(':name', $name, PDO::PARAM_STR);
@@ -80,7 +80,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
 
           if ($stm->execute()) {
             //レコードの表示
-            $sql = "SELECT * FROM ocean2022"; //SQL文を作る
+            $sql = "SELECT * FROM memorial2022"; //SQL文を作る
             $stm = $pdo->prepare($sql); //プリペアドステートメントを作る
             $stm->execute(); //SQL文を実行
             $result = $stm->fetchAll(PDO::FETCH_ASSOC); //結果の取得(連想配列で受け取る)
@@ -91,7 +91,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
             echo "<th>", "選手名", "</th>";
             echo "<th>", "登録期", "</th>";
             echo "<th>", "支部", "</th>";
-            echo "<th>", "備考", "</th>";
+            echo "<th>", "推薦場", "</th>";
             echo "</tr>";
 
             foreach ($result as $row) {

@@ -124,7 +124,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
           </tr>
           <tr>
             <td>8/23~8/28</td>
-            <td>第68回ボートレースメモリアル（モーターボート記念）</td>
+            <td>ボートレースメモリアル（モーターボート記念）</td>
             <td>浜名湖</td>
             <td></td>
           </tr>
@@ -703,6 +703,44 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
             </tbody>
           </table>
         </figure>
+        <div class="br50"></div>
+
+        <h3>ボートレースメモリアル優勝戦結果</h3>
+        <div class="submenu">
+          <button>☆第68回ボートレースメモリアル出場メンバー</button>
+          <?php
+          try {
+            $sql4 = "SELECT * FROM memorial2022";
+            $stm4 = $pdo->prepare($sql4);
+            $stm4->execute();
+            $result4 = $stm4->fetchAll(PDO::FETCH_ASSOC);
+
+            echo '<table border=1 class="hidden">';
+            echo "<tr>";
+            echo "<th>", "登録番号", "</th>";
+            echo "<th>", "選手名", "</th>";
+            echo "<th>", "登録期", "</th>";
+            echo "<th>", "支部", "</th>";
+            echo "<th>", "推薦場", "</th>";
+            echo "</tr>";
+
+            foreach ($result4 as $row) {
+              echo "<tr>";
+              echo "<td>", es($row['number']), "</td>";
+              echo "<td>", es($row['name']), "</td>";
+              echo "<td>", es($row['reg']), "</td>";
+              echo "<td>", es($row['branch']), "</td>";
+              echo "<td>", es($row['remarks']), "</td>";
+              echo "</tr>";
+            }
+            echo "</table>";
+          } catch (Exception $e) {
+            echo '<span class="error">エラーがあります</span><br>';
+            echo $e->getMessage();
+            exit();
+          }
+          ?>
+        </div>
 
 
       </section>

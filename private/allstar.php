@@ -30,7 +30,7 @@
               <li><label>　　支部：
                   <input type="text" name="branch" placeholder="所属支部">
                 </label></li>
-              <li><label>　　備考：
+              <li><label>　推薦場：
                   <input type="text" name="remarks" placeholder="備考">
                 </label></li>
               <li><input type="submit" value="追加する"></li>
