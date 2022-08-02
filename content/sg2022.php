@@ -120,7 +120,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
             <td>7/19~7/24</td>
             <td>オーシャンカップ</td>
             <td>尼崎</td>
-            <td></td>
+            <td>椎名豊</td>
           </tr>
           <tr>
             <td>8/23~8/28</td>
@@ -155,6 +155,8 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
         </table>
         <h2>出場選手＆優勝戦結果</h2>
         <small class="red">※下記の☆レースをクリックすると出場選手が表示されます！</small>
+
+        <h3>ボートレースクラシック優勝戦結果</h3>
         <div class="submenu">
           <button>☆第５７回ボートレースクラシック出場メンバー</button>
           <?php
@@ -193,7 +195,6 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
           }
           ?>
         </div>
-        <h3>ボートレースクラシック優勝戦結果</h3>
         <figure>
           <table border="3">
             <tbody>
@@ -293,6 +294,8 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
           </table>
         </figure>
         <div class="br50"></div>
+
+        <h3>ボートレースオールスター優勝戦結果</h3>
         <div class="submenu">
           <button>☆第49回ボートレースオールスター出場メンバー</button>
           <?php
@@ -328,7 +331,6 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
           }
           ?>
         </div>
-        <h3>ボートレースオールスター優勝戦結果</h3>
         <figure>
           <table border="3">
             <tbody>
@@ -427,16 +429,18 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
             </tbody>
           </table>
         </figure>
+
         <div class="br50"></div>
 
+        <h3>グランドチャンピオン優勝戦結果</h3>
         <div class="submenu">
           <button>☆第32回グランドチャンピオン出場メンバー</button>
           <?php
           try {
-            $sql2 = "SELECT * FROM grandchampion2022";
-            $stm2 = $pdo->prepare($sql2);
-            $stm2->execute();
-            $result2 = $stm2->fetchAll(PDO::FETCH_ASSOC);
+            $sql3 = "SELECT * FROM grandchampion2022";
+            $stm3 = $pdo->prepare($sql3);
+            $stm3->execute();
+            $result3 = $stm3->fetchAll(PDO::FETCH_ASSOC);
 
             echo '<table border=1 class="hidden">';
             echo "<tr>";
@@ -447,7 +451,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
             echo "<th>", "備考", "</th>";
             echo "</tr>";
 
-            foreach ($result2 as $row) {
+            foreach ($result3 as $row) {
               echo "<tr>";
               echo "<td>", es($row['number']), "</td>";
               echo "<td>", es($row['name']), "</td>";
@@ -464,9 +468,8 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
           }
           ?>
         </div>
-        <h3>グランドチャンピオン優勝戦結果</h3>
-        <figure class="wp-block-table">
-          <table class="result">
+        <figure>
+          <table border="3">
             <tbody>
               <tr>
                 <th>着</th>
@@ -522,8 +525,8 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
           <figcaption>優勝戦　12R　決まり手：抜き</figcaption>
         </figure>
 
-        <figure class="wp-block-table">
-          <table class="result">
+        <figure>
+          <table border="3">
             <tbody>
               <tr>
                 <th>天候</th>
@@ -541,8 +544,8 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
           </table>
         </figure>
 
-        <figure class="wp-block-table">
-          <table class="result">
+        <figure>
+          <table border="3">
             <tbody>
               <tr>
                 <th>2連単</th>
@@ -565,14 +568,15 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
         </figure>
         <div class="br50"></div>
 
+        <h3>オーシャンカップ優勝戦結果</h3>
         <div class="submenu">
           <button>☆第27回オーシャンカップ出場メンバー</button>
           <?php
           try {
-            $sql2 = "SELECT * FROM ocean2022";
-            $stm2 = $pdo->prepare($sql2);
-            $stm2->execute();
-            $result2 = $stm2->fetchAll(PDO::FETCH_ASSOC);
+            $sql4 = "SELECT * FROM ocean2022";
+            $stm4 = $pdo->prepare($sql4);
+            $stm4->execute();
+            $result4 = $stm4->fetchAll(PDO::FETCH_ASSOC);
 
             echo '<table border=1 class="hidden">';
             echo "<tr>";
@@ -583,7 +587,7 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
             echo "<th>", "備考", "</th>";
             echo "</tr>";
 
-            foreach ($result2 as $row) {
+            foreach ($result4 as $row) {
               echo "<tr>";
               echo "<td>", es($row['number']), "</td>";
               echo "<td>", es($row['name']), "</td>";
@@ -600,7 +604,106 @@ $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";
           }
           ?>
         </div>
-        <h3>オーシャンカップ優勝戦結果</h3>
+        <figure>
+          <table border="3">
+            <tbody>
+              <tr>
+                <th>着</th>
+                <th>枠</th>
+                <th>選手名</th>
+                <th>レースタイム</th>
+                <th>ST</th>
+              </tr>
+              <tr>
+                <td>１</td>
+                <td class="n1">１</td>
+                <td>椎名 豊</td>
+                <td>1'49"7</td>
+                <td>.11</td>
+              </tr>
+              <tr>
+                <td>２</td>
+                <td class="n2">２</td>
+                <td>稲田 浩二</td>
+                <td>1'51"0</td>
+                <td>.16</td>
+              </tr>
+              <tr>
+                <td>３</td>
+                <td class="n5">５</td>
+                <td>桐生 順平</td>
+                <td>1'52"4</td>
+                <td>.14</td>
+              </tr>
+              <tr>
+                <td>４</td>
+                <td class="n4">４</td>
+                <td>太田 和美</td>
+                <td>1'53"3</td>
+                <td>.17</td>
+              </tr>
+              <tr>
+                <td>５</td>
+                <td class="n3">３</td>
+                <td>丸岡 正典</td>
+                <td>1'53"4</td>
+                <td>.27</td>
+              </tr>
+              <tr>
+                <td>６</td>
+                <td class="n6">６</td>
+                <td>片岡 雅裕</td>
+                <td>1'56"5</td>
+                <td>.14</td>
+              </tr>
+            </tbody>
+          </table>
+          <figcaption>優勝戦　12R　決まり手：逃げ</figcaption>
+        </figure>
+
+        <figure>
+          <table border="3">
+            <tbody>
+              <tr>
+                <th>天候</th>
+                <th>風速</th>
+                <th>波高</th>
+                <th>スタート</th>
+              </tr>
+              <tr>
+                <td>晴れ</td>
+                <td>7m</td>
+                <td>5cm</td>
+                <td>向い風</td>
+              </tr>
+            </tbody>
+          </table>
+        </figure>
+
+
+        <figure>
+          <table border="3">
+            <tbody>
+              <tr>
+                <th>2連単</th>
+                <td class="n1">１</td>
+                <td>ー</td>
+                <td class="n2">２</td>
+                <td>350円</td>
+                <td class="red">1</td>
+              </tr>
+              <tr>
+                <th>3連単</th>
+                <td class="n1">１</td>
+                <td class="n2">２</td>
+                <td class="n5">５</td>
+                <td>1,000円</td>
+                <td class="red">1</td>
+              </tr>
+            </tbody>
+          </table>
+        </figure>
+
 
       </section>
     </div><!-- /main-wrapper -->
